@@ -495,6 +495,11 @@ def _execute_post_load_setup(engine) -> None:
 
 
 def _log(msg: str) -> None:
+    print(f"[load] {msg}")
+
+
+def _parse_args(argv: Sequence[str]) -> argparse.Namespace:
+    """Parse CLI arguments."""
     p = argparse.ArgumentParser(description="Load HCAD extracted data into a database.")
     p.add_argument(
         "--indir", default="extracted", help="Directory with extracted .txt files."

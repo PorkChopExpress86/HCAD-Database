@@ -65,3 +65,52 @@ Agent guidance (what to change and how)
 - When modifying extraction behavior, preserve `safe_extract` safety checks and update manifest generation accordingly.
 
 If anything here is unclear or you'd like additional examples (CI workflow, tests, or a `main` subcommand to chain download+extract), say which area to expand and I will iterate.
+
+Linux (Fedora) and Podman quickstart
+- This project runs great on Fedora with Podman (rootless). Use Podman instead of Docker for the local PostgreSQL database and follow the steps below.
+
+Local PostgreSQL via Podman
+- Start a Postgres 16 container named `hcad-postgres` with a persistent named volume and host port 5432:
+  - Image: `docker.io/library/postgres:16`
+  - Environment: `POSTGRES_USER=postgres`, `POSTGRES_PASSWORD=postgres`, `POSTGRES_DB=hcad`
+  - Ports: `-p 5432:5432`
+  - Volume: `-v hcad_pg:/var/lib/postgresql/data` (named volume; safe on SELinux)
+- Example (bash):
+  - `podman volume create hcad_pg`
+  - `podman run -d --name hcad-postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=hcad -p 5432:5432 -v hcad_pg:/var/lib/postgresql/data docker.io/postgres:16`
+- Health check (optional):
+  - `podman exec -it hcad-postgres pg_isready -U postgres -d hcad`
+
+Environment (.env)
+- Create a file `.env` in the project root with the database URL for SQLAlchemy-compatible tools and scripts:
+  - `DATABASE_URL="postgresql://postgres:postgres@127.0.0.1:5432/hcad"`
+- Use 127.0.0.1 instead of localhost to avoid IPv4/IPv6 resolution issues on some Linux setups.
+
+Linux run workflow (end-to-end)
+1) Create/activate the Python virtual environment and install deps:
+   - `python -m venv .venv && source .venv/bin/activate`
+   - `pip install -r requirements.txt`
+2) Ensure data exists:
+   - Download (optional dry-run): `python download.py --use-named-list --year 2025 --dry-run`
+   - Download: `python download.py --use-named-list --year 2025`
+   - Extract: `python extract.py --workers 4 --manifest extracted`
+   - You should see subfolders under `extracted/` and a manifest JSON.
+3) Start Postgres in Podman (see above), then load data:
+   - `python load.py --indir extracted --db-uri "postgresql://postgres:postgres@127.0.0.1:5432/hcad" --workers 4`
+4) Post-load setup and views:
+   - Apply `post_load_setup.sql` and `create_residential_protest_view.sql` using psql:
+     - `psql "postgresql://postgres:postgres@127.0.0.1:5432/hcad" -f post_load_setup.sql`
+     - `psql "postgresql://postgres:postgres@127.0.0.1:5432/hcad" -f create_residential_protest_view.sql`
+5) Validate queries:
+   - `psql "postgresql://postgres:postgres@127.0.0.1:5432/hcad" -f sample_queries.sql`
+   - Or run `python test_post_load_setup.py` for minimal programmatic checks.
+
+MCP Postgres server (VS Code)
+- If you use Model Context Protocol tooling for SQL access from the editor, configure a Postgres MCP server like:
+  - Command: `npx -y @modelcontextprotocol/server-postgres postgresql://postgres:postgres@127.0.0.1:5432/hcad`
+  - This connects to the Podman Postgres on the default mapped port. Ensure the container is running before use.
+
+Troubleshooting (Linux)
+- Port already in use: stop existing DB or change the published port `-p 5433:5432` and update `DATABASE_URL` accordingly.
+- SELinux volume issues: named volumes (as above) generally avoid labeling problems; for bind mounts, add `:Z` to the mount path.
+- Slow loads: prefer fewer `--workers` if you see high IO wait; or use a tuned Postgres config for bulk ingest.
