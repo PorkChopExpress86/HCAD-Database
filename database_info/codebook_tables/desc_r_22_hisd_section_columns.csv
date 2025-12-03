@@ -1,0 +1,3 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Code,varchar,20,NO,Code,20
+NeighborhoodGroup,varchar,30,,Neighborhood Group Range,20

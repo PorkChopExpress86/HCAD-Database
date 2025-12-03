@@ -1,0 +1,3 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+exempt_cat,varchar,4,NO,Exemption Categories,8
+exemption_dscr,varchar,50,,Exemption Categories Description,8

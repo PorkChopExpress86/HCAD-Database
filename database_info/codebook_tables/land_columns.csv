@@ -1,0 +1,19 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,9
+num,varchar,10,NO,Common or Unclassified Land - Line Number,9
+use_cd,char,4,,Common or Unclassified Land - Use Code See Code Descriptions(Real) - Land UseCode Or desc_r_15_land_usecode.txt,9
+use_dscr,varchar,50,,Land Use Codes - Description,9
+inf_cd,varchar,4,,Common or Unclassified Land - Influence Code See Code Descriptions(Real) - Influence Factors Or desc_r_16_influence_factors.txt,9
+inf_dscr,varchar,50,,Land Influence Factors - Description,9
+inf_adj,varchar,7,,Land Influence Factors - Percent Adjustment,9
+tp,char,2,,Common or Unclassified Land - Unit Type,9
+uts,varchar,14,,Common or Unclassified Land - Units,9
+sz_fact,varchar,7,,Common or Unclassified Land - Size Factor,9
+inf_fact,varchar,7,,Common or Unclassified Land - Influence Factor,9
+cond,varchar,7,,Common or Unclassified Land - Percent Condition,9
+ovr_dscr,varchar,50,,Land Override Codes - Description,9
+tot_adj,varchar,13,,Common or Unclassified Land - Total Adjustments,9
+unit_prc,varchar,13,,Common or Unclassified Land - Unit Price,9
+adj_unit_prc,varchar,15,,Common or Unclassified Land - Adjusted Unit Price,9
+val,varchar,12,,Common or Unclassified Land - Land Value,10
+ovr_val,varchar,12,,Common or Unclassified Land - Override Value,10

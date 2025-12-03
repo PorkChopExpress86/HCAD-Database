@@ -1,0 +1,16 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,3
+Tax_Year,varchar,4,,ARB Hearing Tax Year,3
+Real_Personal_Property,varchar,1,NO,Property Type; R - Real Property,3
+Hearing_Type,char,1,,,3
+State_Class_Code,varchar,16,,State Class Code See Code Descriptions(Real) - State Class: Dept Or desc_r_01_state_class.txt,3
+Owner_Name,varchar,100,,Website Owner name,3
+Scheduled_for_Date,varchar,10,,Published scheduled date for informal meetings Format MM/DD/YYYY,3
+Actual_Hearing_Date,varchar,10,,Actual Hearing Start Date Format MM/DD/YYYY,3
+Release_Date,varchar,10,,ARB Hearing Release Date Format MM/DD/YYYY,3
+Letter_Type,varchar,2,,ARB Conclusion Code See Code Descriptions(Real) – Conclusion Code Or desc_r_25_conclusion_code.txt,3
+Agent_Code,char,6,,ARB Hearing Agent ID Display/Hide the Agent code is based on most recent HCAD Policy,3
+Initial_Appraised_Value,varchar,20,,Noticed Appraised Value,3
+Initial_Market_Value,varchar,20,,Notice Market Value,3
+Final_Appraised_Value,varchar,20,,Final Appraised Value,3
+Final_Market_Value,varchar,20,,Final Market Value,3

@@ -1,0 +1,4518 @@
+{
+  "tables": [
+    {
+      "file": "arb_hearings_pp.txt",
+      "page_start": 3,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 3
+        },
+        {
+          "name": "Tax_Year",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "ARB Hearing Tax Year",
+          "page": 3
+        },
+        {
+          "name": "Personal",
+          "data_type": "varchar",
+          "size": "1",
+          "allow_null": "NO",
+          "description": "Property Type; P - Personal Property",
+          "page": 3
+        },
+        {
+          "name": "Hearing_Type",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "",
+          "description": "ARB Hearing State",
+          "page": 3
+        },
+        {
+          "name": "State_Class_Code",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "State Class Code See Code Descriptions(Personal) - Schedule Code: Class Or desc_t_02_schedule_code.txt",
+          "page": 3
+        },
+        {
+          "name": "Owner_Name",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Website Owner name",
+          "page": 3
+        },
+        {
+          "name": "Scheduled_for_Date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Published scheduled date for informal meetings Format MM/DD/YYYY",
+          "page": 3
+        },
+        {
+          "name": "Actual_Hearing_Date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Actual Hearing Start Date Format MM/DD/YYYY",
+          "page": 3
+        },
+        {
+          "name": "Release_Date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "ARB Hearing Release Date Format MM/DD/YYYY",
+          "page": 3
+        },
+        {
+          "name": "Letter_Type",
+          "data_type": "varchar",
+          "size": "2",
+          "allow_null": "",
+          "description": "ARB Conclusion Code See Code Descriptions(Real) \u2013 Conclusion Code Or desc_r_25_conclusion_code.txt",
+          "page": 3
+        },
+        {
+          "name": "Agent_Code",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "",
+          "description": "ARB Hearing Agent ID Display/Hide the Agent code is based on most recent HCAD Policy",
+          "page": 3
+        },
+        {
+          "name": "Initial_Value",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Noticed Appraised Value",
+          "page": 3
+        },
+        {
+          "name": "Final_Value",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Final Appraised Value",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "file": "arb_hearings_real.txt",
+      "page_start": 3,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 3
+        },
+        {
+          "name": "Tax_Year",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "ARB Hearing Tax Year",
+          "page": 3
+        },
+        {
+          "name": "Real_Personal_Property",
+          "data_type": "varchar",
+          "size": "1",
+          "allow_null": "NO",
+          "description": "Property Type; R - Real Property",
+          "page": 3
+        },
+        {
+          "name": "Hearing_Type",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "",
+          "description": "",
+          "page": 3
+        },
+        {
+          "name": "State_Class_Code",
+          "data_type": "varchar",
+          "size": "16",
+          "allow_null": "",
+          "description": "State Class Code See Code Descriptions(Real) - State Class: Dept Or desc_r_01_state_class.txt",
+          "page": 3
+        },
+        {
+          "name": "Owner_Name",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Website Owner name",
+          "page": 3
+        },
+        {
+          "name": "Scheduled_for_Date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Published scheduled date for informal meetings Format MM/DD/YYYY",
+          "page": 3
+        },
+        {
+          "name": "Actual_Hearing_Date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Actual Hearing Start Date Format MM/DD/YYYY",
+          "page": 3
+        },
+        {
+          "name": "Release_Date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "ARB Hearing Release Date Format MM/DD/YYYY",
+          "page": 3
+        },
+        {
+          "name": "Letter_Type",
+          "data_type": "varchar",
+          "size": "2",
+          "allow_null": "",
+          "description": "ARB Conclusion Code See Code Descriptions(Real) \u2013 Conclusion Code Or desc_r_25_conclusion_code.txt",
+          "page": 3
+        },
+        {
+          "name": "Agent_Code",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "",
+          "description": "ARB Hearing Agent ID Display/Hide the Agent code is based on most recent HCAD Policy",
+          "page": 3
+        },
+        {
+          "name": "Initial_Appraised_Value",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Noticed Appraised Value",
+          "page": 3
+        },
+        {
+          "name": "Initial_Market_Value",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Notice Market Value",
+          "page": 3
+        },
+        {
+          "name": "Final_Appraised_Value",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Final Appraised Value",
+          "page": 3
+        },
+        {
+          "name": "Final_Market_Value",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Final Market Value",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "file": "arb_protest_pp.txt",
+      "page_start": 4,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 4
+        },
+        {
+          "name": "protested_by",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "",
+          "description": "Latest Protest Represent (Owner/Agent) Display/Hide the Agent code is based on most recent HCAD Policy",
+          "page": 4
+        },
+        {
+          "name": "protested_dt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Latest Protest date",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "file": "arb_protest_real.txt",
+      "page_start": 4,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 4
+        },
+        {
+          "name": "protested_by",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "",
+          "description": "Latest Protest Represent (Owner/Agent) Display/Hide the Agent code is based on most recent HCAD Policy",
+          "page": 4
+        },
+        {
+          "name": "protested_dt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Latest Protest date",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "file": "building_other.txt",
+      "page_start": 4,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "25",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 4
+        },
+        {
+          "name": "property_use_cd",
+          "data_type": "varchar",
+          "size": "16",
+          "allow_null": "",
+          "description": "Property Use Code See Code Descriptions(Real) - State Class: Code Or desc_r_01_state_class.txt",
+          "page": 4
+        },
+        {
+          "name": "bld_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Building Number",
+          "page": 4
+        },
+        {
+          "name": "impr_tp",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Building Type See Code Descriptions(Real) - Building Type Code Or desc_r_02_building_type_code.txt",
+          "page": 4
+        },
+        {
+          "name": "impr_mdl_cd",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Building Style See Code Descriptions(Real) - Building Style Or desc_r_03_building_style.txt",
+          "page": 4
+        },
+        {
+          "name": "structure",
+          "data_type": "char",
+          "size": "3",
+          "allow_null": "",
+          "description": "Building Class See Code Descriptions(Real) - Building Class Or desc_r_04_building_class.txt",
+          "page": 4
+        },
+        {
+          "name": "structure_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Class of improvement - Description",
+          "page": 4
+        },
+        {
+          "name": "noticed_Depr_Val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Noticed Depreciated Value",
+          "page": 4
+        },
+        {
+          "name": "Depr_Val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Depreciated Value",
+          "page": 4
+        },
+        {
+          "name": "MS_replacement_cost",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Alternate Replacement Cost",
+          "page": 4
+        },
+        {
+          "name": "cama_replacement_cost",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Replacement Cost",
+          "page": 4
+        },
+        {
+          "name": "accrued_depr_pct",
+          "data_type": "varchar",
+          "size": "9",
+          "allow_null": "",
+          "description": "Accrued Depreciation",
+          "page": 4
+        },
+        {
+          "name": "qa_cd",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Quality Code See Code Descriptions(Real) - Quality Code Or desc_r_07_quality_code.txt",
+          "page": 4
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Quality Codes - Description",
+          "page": 4
+        },
+        {
+          "name": "date_erected",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Actual Year Built",
+          "page": 4
+        },
+        {
+          "name": "eff",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Effective Year Built",
+          "page": 4
+        },
+        {
+          "name": "yr_remodel",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Year Remodeled",
+          "page": 4
+        },
+        {
+          "name": "yr_roll",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Year On Roll",
+          "page": 4
+        },
+        {
+          "name": "appr_by",
+          "data_type": "char",
+          "size": "5",
+          "allow_null": "NO",
+          "description": "Building Appraisal By",
+          "page": 4
+        },
+        {
+          "name": "appr_dt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Date Appraised Format MM/DD/YYYY",
+          "page": 4
+        },
+        {
+          "name": "notes",
+          "data_type": "varchar",
+          "size": "150",
+          "allow_null": "",
+          "description": "Note",
+          "page": 4
+        },
+        {
+          "name": "im_sq_ft",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Improvement Area",
+          "page": 4
+        },
+        {
+          "name": "act_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Actual Area",
+          "page": 5
+        },
+        {
+          "name": "heat_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Heated Area",
+          "page": 5
+        },
+        {
+          "name": "gross_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Gross Area",
+          "page": 5
+        },
+        {
+          "name": "eff_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Effective Area",
+          "page": 5
+        },
+        {
+          "name": "base_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Base Area",
+          "page": 5
+        },
+        {
+          "name": "perimeter",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Perimeter",
+          "page": 5
+        },
+        {
+          "name": "pct",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "NO",
+          "description": "Percent Complete",
+          "page": 5
+        },
+        {
+          "name": "category",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "NO",
+          "description": "Income - PGI Category See Code Descriptions(Real) \u2013 PGI Category Or desc_r_08_pgi_category.txt",
+          "page": 5
+        },
+        {
+          "name": "pgi_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Potential Gross Income Categories - Description",
+          "page": 5
+        },
+        {
+          "name": "prop_nm",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "PGI Income Survey - Property Name",
+          "page": 5
+        },
+        {
+          "name": "units",
+          "data_type": "varchar",
+          "size": "15",
+          "allow_null": "NO",
+          "description": "Locations - Street Unit",
+          "page": 5
+        },
+        {
+          "name": "nra",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Net Rentable Area (sqft)",
+          "page": 5
+        },
+        {
+          "name": "lease_rt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "PGI Income Survey - Lease Rate",
+          "page": 5
+        },
+        {
+          "name": "occ_rt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "PGI Income Survey - Occupied Rate",
+          "page": 5
+        },
+        {
+          "name": "tot_inc",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "NO",
+          "description": "Income - Total Income",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "file": "building_res.txt",
+      "page_start": 5,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "25",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 5
+        },
+        {
+          "name": "property_use_cd",
+          "data_type": "varchar",
+          "size": "16",
+          "allow_null": "",
+          "description": "Property Use Code See Code Descriptions(Real) - State Class: Code Or desc_r_01_state_class.txt",
+          "page": 5
+        },
+        {
+          "name": "bld_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Building Number",
+          "page": 5
+        },
+        {
+          "name": "impr_tp",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Building Type See Code Descriptions(Real) - Building Type Code Or desc_r_02_building_type_code.txt",
+          "page": 5
+        },
+        {
+          "name": "impr_mdl_cd",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Building Style See Code Descriptions(Real) - Building Style Or desc_r_03_building_style.txt",
+          "page": 5
+        },
+        {
+          "name": "structure",
+          "data_type": "char",
+          "size": "3",
+          "allow_null": "",
+          "description": "Building Class See Code Descriptions(Real) - Building Class Or desc_r_04_building_class.txt",
+          "page": 5
+        },
+        {
+          "name": "structure_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Class of improvement - Description",
+          "page": 5
+        },
+        {
+          "name": "dpr_val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Depreciated Value",
+          "page": 5
+        },
+        {
+          "name": "cama_replacement_cost",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Replacement Cost",
+          "page": 5
+        },
+        {
+          "name": "accrued_depr_pct",
+          "data_type": "varchar",
+          "size": "9",
+          "allow_null": "",
+          "description": "Accrued Replacement Cost",
+          "page": 5
+        },
+        {
+          "name": "qa_cd",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Quality Code See Code Descriptions(Real) - Quality Code Or desc_r_07_quality_code.txt",
+          "page": 5
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Building Quality Codes - Description",
+          "page": 5
+        },
+        {
+          "name": "date_erected",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Actual Year Built",
+          "page": 5
+        },
+        {
+          "name": "eff",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Effective Year Built",
+          "page": 5
+        },
+        {
+          "name": "yr_remodel",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Year Remodeled",
+          "page": 5
+        },
+        {
+          "name": "yr_roll",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Year On Roll",
+          "page": 5
+        },
+        {
+          "name": "appr_by",
+          "data_type": "char",
+          "size": "5",
+          "allow_null": "NO",
+          "description": "Building Appraisal By",
+          "page": 5
+        },
+        {
+          "name": "appr_dt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Date Appraised Format MM/DD/YYYY",
+          "page": 5
+        },
+        {
+          "name": "notes",
+          "data_type": "varchar",
+          "size": "150",
+          "allow_null": "",
+          "description": "Note",
+          "page": 5
+        },
+        {
+          "name": "im_sq_ft",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Base Area",
+          "page": 5
+        },
+        {
+          "name": "act_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Actual Area",
+          "page": 5
+        },
+        {
+          "name": "heat_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Heated Area",
+          "page": 6
+        },
+        {
+          "name": "gross_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Gross Area",
+          "page": 6
+        },
+        {
+          "name": "eff_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Effective Area",
+          "page": 6
+        },
+        {
+          "name": "base_ar",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Base Area",
+          "page": 6
+        },
+        {
+          "name": "perimeter",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Perimeter",
+          "page": 6
+        },
+        {
+          "name": "pct",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "NO",
+          "description": "Percent Complete",
+          "page": 6
+        },
+        {
+          "name": "bld_adj",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "NO",
+          "description": "Building Adjustment",
+          "page": 6
+        },
+        {
+          "name": "rcnld",
+          "data_type": "varchar",
+          "size": "14",
+          "allow_null": "",
+          "description": "Building Replace Cost New",
+          "page": 6
+        },
+        {
+          "name": "size_index",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Building Price Adjustment",
+          "page": 6
+        },
+        {
+          "name": "lump_sum_adj",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "NO",
+          "description": "Building Total Unit Adjustment",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "file": "deeds.txt",
+      "page_start": 6,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 6
+        },
+        {
+          "name": "dos",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Date of Sale Format MM/DD/YYYY",
+          "page": 6
+        },
+        {
+          "name": "clerk_yr",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Clerk Year",
+          "page": 6
+        },
+        {
+          "name": "clerk_id",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Clerk ID Number",
+          "page": 6
+        },
+        {
+          "name": "deed_id",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Deed Id",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "file": "exterior.txt",
+      "page_start": 6,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 6
+        },
+        {
+          "name": "bld_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Building Number",
+          "page": 6
+        },
+        {
+          "name": "sar_cd",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "Subarea Type (For example) See Code Descriptions(Real) - Subarea Types Or desc_r_09_subarea_type.txt",
+          "page": 6
+        },
+        {
+          "name": "sar_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Subarea Types - Description",
+          "page": 6
+        },
+        {
+          "name": "area",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Actual Area",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "file": "extra_features.txt",
+      "page_start": 6,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 6
+        },
+        {
+          "name": "bld_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Extra Features Building Number",
+          "page": 6
+        },
+        {
+          "name": "count",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Account Total Number of Extra Features",
+          "page": 6
+        },
+        {
+          "name": "grade",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Grade",
+          "page": 6
+        },
+        {
+          "name": "cd",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "",
+          "description": "Use Code See Code Descriptions(Real) - Extra Features Or desc_r_10_extra_features.txt",
+          "page": 6
+        },
+        {
+          "name": "s_dscr",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Use Codes Description See Code Descriptions(Real) - Extra Features: Dscr",
+          "page": 6
+        },
+        {
+          "name": "l_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Use Codes Long Description See Code Descriptions(Real) - Extra Features: LongDescription",
+          "page": 6
+        },
+        {
+          "name": "cat",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "",
+          "description": "Use Codes Category: Example See Code Descriptions(Real) -Extra Feature Category Or desc_r_11_extra_feature_category.txt",
+          "page": 6
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Use Codes Categories Description",
+          "page": 6
+        },
+        {
+          "name": "note",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Note",
+          "page": 6
+        },
+        {
+          "name": "uts",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "",
+          "description": "Units",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "file": "extra_features_detail1.txt",
+      "page_start": 7,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 7
+        },
+        {
+          "name": "cd",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "",
+          "description": "Use Codex See Code Descriptions(Real) - Extra Features Or desc_r_10_extra_features.txt",
+          "page": 7
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Use Codes Long Description",
+          "page": 7
+        },
+        {
+          "name": "grade",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Grade",
+          "page": 7
+        },
+        {
+          "name": "cond_cd",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Condition Code",
+          "page": 7
+        },
+        {
+          "name": "bld_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Extra Features Building Number",
+          "page": 7
+        },
+        {
+          "name": "length",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Length",
+          "page": 7
+        },
+        {
+          "name": "width",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Width",
+          "page": 7
+        },
+        {
+          "name": "units",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "",
+          "description": "Units",
+          "page": 7
+        },
+        {
+          "name": "unit_price",
+          "data_type": "varchar",
+          "size": "14",
+          "allow_null": "",
+          "description": "Unit Price",
+          "page": 7
+        },
+        {
+          "name": "adj_unit_price",
+          "data_type": "varchar",
+          "size": "16",
+          "allow_null": "",
+          "description": "Adjusted Unit Price",
+          "page": 7
+        },
+        {
+          "name": "pct_comp",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "",
+          "description": "Original Condition",
+          "page": 7
+        },
+        {
+          "name": "act_yr",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Year Built",
+          "page": 7
+        },
+        {
+          "name": "eff_yr",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Effective Year Built",
+          "page": 7
+        },
+        {
+          "name": "roll_yr",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Year On Roll",
+          "page": 7
+        },
+        {
+          "name": "DT",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "",
+          "description": "Use Codes Depreciation Table plus Condition Code",
+          "page": 7
+        },
+        {
+          "name": "pct_cond",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Percent Condition",
+          "page": 7
+        },
+        {
+          "name": "dpr_val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Depreciated Value",
+          "page": 7
+        },
+        {
+          "name": "note",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Note",
+          "page": 7
+        },
+        {
+          "name": "asd_val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Assessed Value",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "file": "extra_features_detail2.txt",
+      "page_start": 7,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 7
+        },
+        {
+          "name": "cd",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "",
+          "description": "Use Code See Code Descriptions(Real) - Extra Features Or desc_r_10_extra_features.txt",
+          "page": 7
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Use Codes Long Description",
+          "page": 7
+        },
+        {
+          "name": "grade",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Grade",
+          "page": 7
+        },
+        {
+          "name": "cond_cd",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Condition Code",
+          "page": 7
+        },
+        {
+          "name": "bld_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Extra Features Building Number",
+          "page": 7
+        },
+        {
+          "name": "length",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Length",
+          "page": 7
+        },
+        {
+          "name": "width",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Width",
+          "page": 7
+        },
+        {
+          "name": "units",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "",
+          "description": "Units",
+          "page": 7
+        },
+        {
+          "name": "unit_price",
+          "data_type": "varchar",
+          "size": "14",
+          "allow_null": "",
+          "description": "Unit Price",
+          "page": 7
+        },
+        {
+          "name": "adj_unit_price",
+          "data_type": "varchar",
+          "size": "16",
+          "allow_null": "",
+          "description": "Adjusted Unit Price",
+          "page": 7
+        },
+        {
+          "name": "pct_comp",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "",
+          "description": "Original Condition",
+          "page": 7
+        },
+        {
+          "name": "act_yr",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Year Built",
+          "page": 7
+        },
+        {
+          "name": "eff_yr",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Effective Year Built",
+          "page": 7
+        },
+        {
+          "name": "roll_yr",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Year On Roll",
+          "page": 8
+        },
+        {
+          "name": "DT",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "",
+          "description": "Use Codes Depreciation Table plus Condition Code",
+          "page": 8
+        },
+        {
+          "name": "pct_cond",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Percent Condition",
+          "page": 8
+        },
+        {
+          "name": "dpr_val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Depreciated Value",
+          "page": 8
+        },
+        {
+          "name": "note",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Note",
+          "page": 8
+        },
+        {
+          "name": "asd_val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Assessed Value",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "file": "fixtures.txt",
+      "page_start": 8,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 8
+        },
+        {
+          "name": "bld_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Building Number",
+          "page": 8
+        },
+        {
+          "name": "type",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Element Category See Code Descriptions(Real) - Building Data (Elements and Fixtures) Or desc_r_05_building_data_elements.txt",
+          "page": 8
+        },
+        {
+          "name": "type_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Element Categories Description",
+          "page": 8
+        },
+        {
+          "name": "units",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Units",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "file": "jur_exempt.txt",
+      "page_start": 8,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 8
+        },
+        {
+          "name": "tax_district",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "Taxing District See Code Descriptions(Real) - Real Jurisdictions Or desc_r_12_real_jurisdictions.txt",
+          "page": 8
+        },
+        {
+          "name": "exempt_cat",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Exemption Types Category See Code Descriptions(Real) - Exemption Categories Or desc_r_14_exemption_category.txt",
+          "page": 8
+        },
+        {
+          "name": "exempt_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Exempt Value",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "file": "jur_exempt_cd.txt",
+      "page_start": 8,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 8
+        },
+        {
+          "name": "exempt_cat",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "NO",
+          "description": "Exemption Types Category List",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "file": "jur_exemption_dscr.txt",
+      "page_start": 8,
+      "fields": [
+        {
+          "name": "exempt_cat",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Exemption Categories",
+          "page": 8
+        },
+        {
+          "name": "exemption_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Exemption Categories Description",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "file": "jur_tax_dist_exempt_value_rate.txt",
+      "page_start": 9,
+      "fields": [
+        {
+          "name": "RP_TYPE",
+          "data_type": "varchar",
+          "size": "4 NO",
+          "allow_null": "",
+          "description": "Type; R-Real",
+          "page": 9
+        },
+        {
+          "name": "tax_dist",
+          "data_type": "varchar",
+          "size": "6 NO",
+          "allow_null": "",
+          "description": "District Code",
+          "page": 9
+        },
+        {
+          "name": "name",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "District Name",
+          "page": 9
+        },
+        {
+          "name": "exempt_cd",
+          "data_type": "char",
+          "size": "3",
+          "allow_null": "",
+          "description": "Code",
+          "page": 9
+        },
+        {
+          "name": "prop",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Millage Rate",
+          "page": 9
+        },
+        {
+          "name": "curr",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Millage Rate",
+          "page": 9
+        },
+        {
+          "name": "exempt_val",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Value",
+          "page": 9
+        },
+        {
+          "name": "exempt_rate",
+          "data_type": "varchar",
+          "size": "8",
+          "allow_null": "",
+          "description": "Percentage",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "file": "jur_value.txt",
+      "page_start": 9,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13 NO",
+          "allow_null": "Account",
+          "description": "Number",
+          "page": 9
+        },
+        {
+          "name": "tax_district",
+          "data_type": "varchar",
+          "size": "6 NO",
+          "allow_null": "Taxing",
+          "description": "District Code Code Descriptions(Real) - Real Jurisdictions desc_r_12_real_jurisdictions.txt",
+          "page": 9
+        },
+        {
+          "name": "tp_cd",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "Taxing",
+          "description": "District Type Code Descriptions(Real) - Real Jurisdiction Type desc_r_13_real_jurisdiction_type.txt",
+          "page": 9
+        },
+        {
+          "name": "pct_district",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "Additional",
+          "description": "Districts Percent",
+          "page": 9
+        },
+        {
+          "name": "appraised_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "Capped",
+          "description": "Value",
+          "page": 9
+        },
+        {
+          "name": "taxable_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "Taxable",
+          "description": "Value",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "file": "land.txt",
+      "page_start": 9,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 9
+        },
+        {
+          "name": "num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Common or Unclassified Land - Line Number",
+          "page": 9
+        },
+        {
+          "name": "use_cd",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Use Code See Code Descriptions(Real) - Land UseCode Or desc_r_15_land_usecode.txt",
+          "page": 9
+        },
+        {
+          "name": "use_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Land Use Codes - Description",
+          "page": 9
+        },
+        {
+          "name": "inf_cd",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Influence Code See Code Descriptions(Real) - Influence Factors Or desc_r_16_influence_factors.txt",
+          "page": 9
+        },
+        {
+          "name": "inf_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Land Influence Factors - Description",
+          "page": 9
+        },
+        {
+          "name": "inf_adj",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Land Influence Factors - Percent Adjustment",
+          "page": 9
+        },
+        {
+          "name": "tp",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Unit Type",
+          "page": 9
+        },
+        {
+          "name": "uts",
+          "data_type": "varchar",
+          "size": "14",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Units",
+          "page": 9
+        },
+        {
+          "name": "sz_fact",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Size Factor",
+          "page": 9
+        },
+        {
+          "name": "inf_fact",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Influence Factor",
+          "page": 9
+        },
+        {
+          "name": "cond",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Percent Condition",
+          "page": 9
+        },
+        {
+          "name": "ovr_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Land Override Codes - Description",
+          "page": 9
+        },
+        {
+          "name": "tot_adj",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Total Adjustments",
+          "page": 9
+        },
+        {
+          "name": "unit_prc",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Unit Price",
+          "page": 9
+        },
+        {
+          "name": "adj_unit_prc",
+          "data_type": "varchar",
+          "size": "15",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Adjusted Unit Price",
+          "page": 9
+        },
+        {
+          "name": "val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Land Value",
+          "page": 10
+        },
+        {
+          "name": "ovr_val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Common or Unclassified Land - Override Value",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "file": "land_ag.txt",
+      "page_start": 10,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 10
+        },
+        {
+          "name": "num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Classified Ag Land/Market Ag Land - Line Number",
+          "page": 10
+        },
+        {
+          "name": "use_cd",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Use Code See Code Descriptions(Real) - Land UseCode Or desc_r_15_land_usecode.txt",
+          "page": 10
+        },
+        {
+          "name": "use_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Land Use Codes \u2013 Description",
+          "page": 10
+        },
+        {
+          "name": "inf_cd",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Influence Code See Code Descriptions(Real) - Influence Factors Or desc_r_16_influence_factors.txt",
+          "page": 10
+        },
+        {
+          "name": "inf_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Land Influence Factors - Description",
+          "page": 10
+        },
+        {
+          "name": "inf_adj",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Land Influence Factors - Percent Adjustment",
+          "page": 10
+        },
+        {
+          "name": "tp",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Unit Type",
+          "page": 10
+        },
+        {
+          "name": "uts",
+          "data_type": "varchar",
+          "size": "14",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Units",
+          "page": 10
+        },
+        {
+          "name": "sz_fact",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Size Factor",
+          "page": 10
+        },
+        {
+          "name": "inf_fact",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Influence Factor",
+          "page": 10
+        },
+        {
+          "name": "cond",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Percent Condition",
+          "page": 10
+        },
+        {
+          "name": "ovr_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Land Override Codes - Description",
+          "page": 10
+        },
+        {
+          "name": "tot_adj",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Total Adjustments",
+          "page": 10
+        },
+        {
+          "name": "unit_prc",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Unit Price",
+          "page": 10
+        },
+        {
+          "name": "adj_unit_prc",
+          "data_type": "varchar",
+          "size": "15",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Adjusted Unit Price",
+          "page": 10
+        },
+        {
+          "name": "val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Land Value",
+          "page": 10
+        },
+        {
+          "name": "ovr_val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Classified Ag Land/Market Ag Land - Override Value",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "file": "owners.txt",
+      "page_start": 10,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 10
+        },
+        {
+          "name": "ln_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Owner Name",
+          "page": 10
+        },
+        {
+          "name": "name",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Owner Line Number",
+          "page": 10
+        },
+        {
+          "name": "aka",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Owner AKA",
+          "page": 10
+        },
+        {
+          "name": "pct_own",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "",
+          "description": "Percent Ownership",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "file": "ownership_history.txt",
+      "page_start": 10,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "char",
+          "size": "25",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 10
+        },
+        {
+          "name": "purchase_date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "New Owner Date",
+          "page": 10
+        },
+        {
+          "name": "name",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Owner Name",
+          "page": 10
+        },
+        {
+          "name": "site_address",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Location Address",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "file": "parcel_tieback.txt",
+      "page_start": 11,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "char",
+          "size": "25",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 11
+        },
+        {
+          "name": "tp",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Relationship Types See Code Descriptions(Real) - Relationship Type Or desc_r_17_relationship_type.txt",
+          "page": 11
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Relationship Category Description",
+          "page": 11
+        },
+        {
+          "name": "related_acct",
+          "data_type": "char",
+          "size": "25",
+          "allow_null": "",
+          "description": "Related Account Number",
+          "page": 11
+        },
+        {
+          "name": "pct",
+          "data_type": "varchar",
+          "size": "9",
+          "allow_null": "",
+          "description": "Percent Allocated",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "file": "permits.txt",
+      "page_start": 11,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 11
+        },
+        {
+          "name": "id",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Permit ID",
+          "page": 11
+        },
+        {
+          "name": "agency_id",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Permit Agency ID",
+          "page": 11
+        },
+        {
+          "name": "status",
+          "data_type": "varchar",
+          "size": "1",
+          "allow_null": "",
+          "description": "Permit Status See Code Descriptions(Real) - Permit Status Or desc_r_18_permit_status.txt",
+          "page": 11
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Permit Description",
+          "page": 11
+        },
+        {
+          "name": "dor_cd",
+          "data_type": "varchar",
+          "size": "16",
+          "allow_null": "",
+          "description": "Property Use Code See Code Descriptions(Real) - State Class Or desc_r_01_state_class.txt",
+          "page": 11
+        },
+        {
+          "name": "permit_type",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Permit Type See Code Descriptions(Real) - Permit Code Or desc_r_19_permit_code.txt",
+          "page": 11
+        },
+        {
+          "name": "permit_tp_descr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Permit Type Description",
+          "page": 11
+        },
+        {
+          "name": "property_tp",
+          "data_type": "varchar",
+          "size": "3",
+          "allow_null": "",
+          "description": "Permit Property Type",
+          "page": 11
+        },
+        {
+          "name": "issue_date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Permit Issue Date Format MM/DD/YYYY",
+          "page": 11
+        },
+        {
+          "name": "yr",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Permit Year",
+          "page": 11
+        },
+        {
+          "name": "site_num",
+          "data_type": "varchar",
+          "size": "9",
+          "allow_null": "",
+          "description": "Permit Street Number",
+          "page": 11
+        },
+        {
+          "name": "site_pfx",
+          "data_type": "varchar",
+          "size": "2",
+          "allow_null": "",
+          "description": "Permit Street Prefix",
+          "page": 11
+        },
+        {
+          "name": "site_str",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Permit Street Name",
+          "page": 11
+        },
+        {
+          "name": "site_tp",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Permit Street Type",
+          "page": 11
+        },
+        {
+          "name": "site_sfx",
+          "data_type": "varchar",
+          "size": "25",
+          "allow_null": "",
+          "description": "Permit Street Suffix",
+          "page": 11
+        },
+        {
+          "name": "site_apt",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "",
+          "description": "Permit Apartment Number",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "file": "real_acct.txt",
+      "page_start": 11,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "25",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 11
+        },
+        {
+          "name": "yr",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Tax Year",
+          "page": 11
+        },
+        {
+          "name": "mailto",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Web Name plus Mailto",
+          "page": 11
+        },
+        {
+          "name": "mail_addr_1",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Mailing Address Line 1",
+          "page": 11
+        },
+        {
+          "name": "mail_addr_2",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Mailing Address Line 2",
+          "page": 11
+        },
+        {
+          "name": "mail_city",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Mailing City",
+          "page": 12
+        },
+        {
+          "name": "mail_state",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Mailing State",
+          "page": 12
+        },
+        {
+          "name": "mail_zip",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Mailing Zip code",
+          "page": 12
+        },
+        {
+          "name": "mail_country",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Mailing Country",
+          "page": 12
+        },
+        {
+          "name": "undeliverable",
+          "data_type": "varchar",
+          "size": "1",
+          "allow_null": "",
+          "description": "Mailing Undeliverable Flag",
+          "page": 12
+        },
+        {
+          "name": "str_pfx",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Street Prefix",
+          "page": 12
+        },
+        {
+          "name": "str_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Street Number",
+          "page": 12
+        },
+        {
+          "name": "str_num_sfx",
+          "data_type": "char",
+          "size": "3",
+          "allow_null": "",
+          "description": "Street Number Suffix",
+          "page": 12
+        },
+        {
+          "name": "str",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Street Name",
+          "page": 12
+        },
+        {
+          "name": "str_sfx",
+          "data_type": "varchar",
+          "size": "25",
+          "allow_null": "",
+          "description": "Street Suffix",
+          "page": 12
+        },
+        {
+          "name": "str_sfx_dir",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Street Suffix Direction",
+          "page": 12
+        },
+        {
+          "name": "str_unit",
+          "data_type": "varchar",
+          "size": "15",
+          "allow_null": "",
+          "description": "Street Unit",
+          "page": 12
+        },
+        {
+          "name": "site_addr_1",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Location Address information",
+          "page": 12
+        },
+        {
+          "name": "site_addr_2",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "City",
+          "page": 12
+        },
+        {
+          "name": "site_addr_3",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Zip",
+          "page": 12
+        },
+        {
+          "name": "state_class",
+          "data_type": "varchar",
+          "size": "16",
+          "allow_null": "",
+          "description": "Property Use Code See Code Descriptions(Real) - State Class Or desc_r_01_state_class.txt",
+          "page": 12
+        },
+        {
+          "name": "school_dist",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "",
+          "description": "ISD Code See Code Descriptions(Real) - School District Or desc_r_20_school_district.txt",
+          "page": 12
+        },
+        {
+          "name": "map_facet",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "",
+          "description": "Location Street Map",
+          "page": 12
+        },
+        {
+          "name": "key_map",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "",
+          "description": "Location Map ID",
+          "page": 12
+        },
+        {
+          "name": "Neighborhood_Code",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Neighborhood Code See real_neighborhood_code.txt: cd",
+          "page": 12
+        },
+        {
+          "name": "Neighborhood_Grp",
+          "data_type": "varchar",
+          "size": "8",
+          "allow_null": "",
+          "description": "Neighborhoods Group Code See real_neighborhood_code.txt: grp_cd See Code Descriptions(Real): HISD section",
+          "page": 12
+        },
+        {
+          "name": "Market_Area_1",
+          "data_type": "varchar",
+          "size": "8",
+          "allow_null": "",
+          "description": "Market Area 1 See Code Descriptions(Real) - Market Area Or desc_r_21_market_area.txt",
+          "page": 12
+        },
+        {
+          "name": "Market_Area_1_Dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Market Areas 1 Description",
+          "page": 12
+        },
+        {
+          "name": "Market_Area_2",
+          "data_type": "varchar",
+          "size": "8",
+          "allow_null": "",
+          "description": "Market Area 2 See Code Descriptions(Real) - Market Area Or desc_r_21_market_area.txt",
+          "page": 12
+        },
+        {
+          "name": "Market_Area_2_Dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Market Areas 2 Description",
+          "page": 12
+        },
+        {
+          "name": "econ_area",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "",
+          "description": "Economic Area",
+          "page": 12
+        },
+        {
+          "name": "econ_bld_class",
+          "data_type": "char",
+          "size": "5",
+          "allow_null": "",
+          "description": "Economic Building Class",
+          "page": 12
+        },
+        {
+          "name": "center_code",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "",
+          "description": "Account Center Code",
+          "page": 12
+        },
+        {
+          "name": "yr_impr",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Parcel Year Improved",
+          "page": 12
+        },
+        {
+          "name": "yr_annexed",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Parcel Year Annexed",
+          "page": 12
+        },
+        {
+          "name": "splt_dt",
+          "data_type": "char",
+          "size": "20",
+          "allow_null": "",
+          "description": "blank",
+          "page": 12
+        },
+        {
+          "name": "dsc_cd",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Parcel DSC Code",
+          "page": 12
+        },
+        {
+          "name": "nxt_bld",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Next Building",
+          "page": 12
+        },
+        {
+          "name": "bld_ar",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Total Building Area",
+          "page": 12
+        },
+        {
+          "name": "land_ar",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Total Land Area Square Footage",
+          "page": 12
+        },
+        {
+          "name": "acreage",
+          "data_type": "varchar",
+          "size": "14",
+          "allow_null": "",
+          "description": "Total Land Area Acreage",
+          "page": 12
+        },
+        {
+          "name": "Cap_acct",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Capped Flag",
+          "page": 12
+        },
+        {
+          "name": "shared_cad",
+          "data_type": "char",
+          "size": "3",
+          "allow_null": "",
+          "description": "Shared CAD Flag",
+          "page": 12
+        },
+        {
+          "name": "land_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Market Land Value",
+          "page": 12
+        },
+        {
+          "name": "bld_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Building Value",
+          "page": 13
+        },
+        {
+          "name": "x_features_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Extra Feature Value",
+          "page": 13
+        },
+        {
+          "name": "ag_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Classified Land Value",
+          "page": 13
+        },
+        {
+          "name": "assessed_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Assessed Value",
+          "page": 13
+        },
+        {
+          "name": "tot_appr_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Appraised Value",
+          "page": 13
+        },
+        {
+          "name": "tot_mkt_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Market Value",
+          "page": 13
+        },
+        {
+          "name": "prior_land_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Prior Year Market Land Value",
+          "page": 13
+        },
+        {
+          "name": "prior_bld_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Prior Year Building Value",
+          "page": 13
+        },
+        {
+          "name": "prior_x_features_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Prior Year Extra Feature Value",
+          "page": 13
+        },
+        {
+          "name": "prior_ag_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Prior Year Classified Land Value",
+          "page": 13
+        },
+        {
+          "name": "prior_tot_appr_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Prior Year Capped Value",
+          "page": 13
+        },
+        {
+          "name": "prior_tot_mkt_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Prior Year Just Value",
+          "page": 13
+        },
+        {
+          "name": "new_construction_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Total New Construction Value",
+          "page": 13
+        },
+        {
+          "name": "tot_rcn_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Total Building Replace Cost Value",
+          "page": 13
+        },
+        {
+          "name": "value_status",
+          "data_type": "varchar",
+          "size": "36",
+          "allow_null": "",
+          "description": "Value Notice Status",
+          "page": 13
+        },
+        {
+          "name": "noticed",
+          "data_type": "varchar",
+          "size": "1",
+          "allow_null": "",
+          "description": "Account Noticed Flag; Y/N",
+          "page": 13
+        },
+        {
+          "name": "notice_dt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Account Noticed Date",
+          "page": 13
+        },
+        {
+          "name": "protested",
+          "data_type": "varchar",
+          "size": "1",
+          "allow_null": "",
+          "description": "Protested Flag",
+          "page": 13
+        },
+        {
+          "name": "certified_date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Account Certified Date",
+          "page": 13
+        },
+        {
+          "name": "rev_dt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Date Reviewed",
+          "page": 13
+        },
+        {
+          "name": "rev_by",
+          "data_type": "char",
+          "size": "5",
+          "allow_null": "",
+          "description": "Reviewed By",
+          "page": 13
+        },
+        {
+          "name": "new_own_dt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "New Owner Date",
+          "page": 13
+        },
+        {
+          "name": "lgl_1",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Legal Line 1 Description",
+          "page": 13
+        },
+        {
+          "name": "lgl_2",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Legal Line 2 Description",
+          "page": 13
+        },
+        {
+          "name": "lgl_3",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Legal Line 3 Description",
+          "page": 13
+        },
+        {
+          "name": "lgl_4",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Legal Line 4 Description",
+          "page": 13
+        },
+        {
+          "name": "jurs",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Account Jurisdictions",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "file": "real_mnrl.txt",
+      "page_start": 13,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Account Number of Minerals",
+          "page": 13
+        },
+        {
+          "name": "dor_cd",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "",
+          "description": "Property Use Code",
+          "page": 13
+        },
+        {
+          "name": "Rail_leasenum",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Railroad Commission Lease Number",
+          "page": 13
+        },
+        {
+          "name": "Type_Interest",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Owner Interest Type",
+          "page": 13
+        },
+        {
+          "name": "Interest_Percent",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Owner Interest Percent",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "file": "real_neighborhood_code.txt",
+      "page_start": 13,
+      "fields": [
+        {
+          "name": "cd",
+          "data_type": "varchar",
+          "size": "11",
+          "allow_null": "NO",
+          "description": "Neighborhood Code",
+          "page": 13
+        },
+        {
+          "name": "grp_cd",
+          "data_type": "varchar",
+          "size": "8",
+          "allow_null": "",
+          "description": "Neighborhoods Group Code",
+          "page": 13
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Neighborhood Description",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "file": "structural_elem1.txt",
+      "page_start": 13,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Residential Coded Structural Elements Account",
+          "page": 14
+        },
+        {
+          "name": "bld_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Coded Structural Elements - Building Number",
+          "page": 14
+        },
+        {
+          "name": "code",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "NO",
+          "description": "Coded Structural Element Type See Code Descriptions(Real) - Structural Element Type: Type Or desc_r_06_structural_element_type.txt",
+          "page": 14
+        },
+        {
+          "name": "adj",
+          "data_type": "varchar",
+          "size": "11",
+          "allow_null": "",
+          "description": "Building Adjustment Amount",
+          "page": 14
+        },
+        {
+          "name": "type",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Coded Structural Elements Category See Code Descriptions(Real) - Building Data (Elements and Fixtures) Or desc_r_05_building_data_elements.txt",
+          "page": 14
+        },
+        {
+          "name": "type_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Structural Elements Category Description",
+          "page": 14
+        },
+        {
+          "name": "category_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Structural Element Types Description",
+          "page": 14
+        },
+        {
+          "name": "dor_cd",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Property Use Code See Code Descriptions(Real) - State Class Or desc_r_01_state_class.txt",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "file": "structural_elem2.txt",
+      "page_start": 14,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "NO",
+          "description": "Commercial Coded Structural Elements Account",
+          "page": 14
+        },
+        {
+          "name": "bld_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Coded Structural Elements - Building Number",
+          "page": 14
+        },
+        {
+          "name": "code",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "",
+          "description": "Coded Structural Element Type See Code Descriptions(Real) - Structural Element Type Or desc_r_06_structural_element_type.txt",
+          "page": 14
+        },
+        {
+          "name": "adj",
+          "data_type": "varchar",
+          "size": "11",
+          "allow_null": "",
+          "description": "Building Adjustment Amount",
+          "page": 14
+        },
+        {
+          "name": "type",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Coded Structural Elements Category See Code Descriptions(Real) - Building Data (Elements and Fixtures): Or desc_r_05_building_data_elements.txt",
+          "page": 14
+        },
+        {
+          "name": "type_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Structural Elements Category Description",
+          "page": 14
+        },
+        {
+          "name": "category_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Structural Element Types Description",
+          "page": 14
+        },
+        {
+          "name": "dor_cd",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Property Use Code See Code Descriptions(Real) - State Class Or desc_r_01_state_class.txt",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "file": "t_business_acct.txt",
+      "page_start": 14,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 14
+        },
+        {
+          "name": "tax_year",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Tax Year",
+          "page": 14
+        },
+        {
+          "name": "name",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Web Owner Name",
+          "page": 14
+        },
+        {
+          "name": "bus_name",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Business Name",
+          "page": 14
+        },
+        {
+          "name": "site_addr",
+          "data_type": "varchar",
+          "size": "80",
+          "allow_null": "",
+          "description": "Location Address",
+          "page": 14
+        },
+        {
+          "name": "site_city",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Mailing City",
+          "page": 14
+        },
+        {
+          "name": "site_state",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "NO",
+          "description": "Mailing State",
+          "page": 14
+        },
+        {
+          "name": "site_zip",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Mailing Zipcode",
+          "page": 14
+        },
+        {
+          "name": "mailto",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Mailing Country",
+          "page": 14
+        },
+        {
+          "name": "mail_addr_1",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Mailing Undeliverable Flag",
+          "page": 14
+        },
+        {
+          "name": "mail_addr_2",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Location Street Prefix",
+          "page": 14
+        },
+        {
+          "name": "mail_city",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Location Street Number",
+          "page": 14
+        },
+        {
+          "name": "mail_state",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "Location Street Number Suffix",
+          "page": 14
+        },
+        {
+          "name": "mail_zip",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Location Street Name",
+          "page": 14
+        },
+        {
+          "name": "phone",
+          "data_type": "varchar",
+          "size": "14",
+          "allow_null": "",
+          "description": "Location Street Suffix",
+          "page": 15
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "80",
+          "allow_null": "",
+          "description": "Location Street Suffix Direction",
+          "page": 15
+        },
+        {
+          "name": "dscr1",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Account Department Codes List",
+          "page": 15
+        },
+        {
+          "name": "dscr2",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Description 1",
+          "page": 15
+        },
+        {
+          "name": "dscr3",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Description 2",
+          "page": 15
+        },
+        {
+          "name": "sched_cd",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "",
+          "description": "Schedule Code See Code Descriptions(Personal) - Schedule Code Or desc_t_02_schedule_code.txt",
+          "page": 15
+        },
+        {
+          "name": "sched_code_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Schedule Codes Description",
+          "page": 15
+        },
+        {
+          "name": "class_code",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "State Class See Code Descriptions(Personal) \u2013 State Class Or desc_t_01_state_class.txt",
+          "page": 15
+        },
+        {
+          "name": "class_code_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "State Class Codes Description",
+          "page": 15
+        },
+        {
+          "name": "sic",
+          "data_type": "varchar",
+          "size": "8",
+          "allow_null": "",
+          "description": "SIC Code See Code Descriptions(Personal) \u2013 SIC Code: Type Or desc_t_03_sic_code.txt",
+          "page": 15
+        },
+        {
+          "name": "sic_dscr",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "SIC Code Description",
+          "page": 15
+        },
+        {
+          "name": "sqft",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "NO",
+          "description": "Square Footage",
+          "page": 15
+        },
+        {
+          "name": "cntr_cd",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Area Code",
+          "page": 15
+        },
+        {
+          "name": "shared_cad",
+          "data_type": "varchar",
+          "size": "1",
+          "allow_null": "",
+          "description": "Share CAD; Always 'N'",
+          "page": 15
+        },
+        {
+          "name": "key_map",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "Location Map ID",
+          "page": 15
+        },
+        {
+          "name": "asd_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Assessed Value",
+          "page": 15
+        },
+        {
+          "name": "prior_asd_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Prior Year Value",
+          "page": 15
+        },
+        {
+          "name": "return_cd",
+          "data_type": "varchar",
+          "size": "52",
+          "allow_null": "NO",
+          "description": "Return Code",
+          "page": 15
+        },
+        {
+          "name": "value_status",
+          "data_type": "varchar",
+          "size": "36",
+          "allow_null": "NO",
+          "description": "Value Notice Status; Noticed/All Values Pending",
+          "page": 15
+        },
+        {
+          "name": "noticed",
+          "data_type": "varchar",
+          "size": "1",
+          "allow_null": "NO",
+          "description": "Account Noticed Flag; Y/N",
+          "page": 15
+        },
+        {
+          "name": "noticed_dt",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Notice Date Format MM/DD/YYYY",
+          "page": 15
+        },
+        {
+          "name": "protested",
+          "data_type": "varchar",
+          "size": "1",
+          "allow_null": "NO",
+          "description": "Protested Flag",
+          "page": 15
+        },
+        {
+          "name": "certified_date",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Account Certified Date",
+          "page": 15
+        },
+        {
+          "name": "agent_id",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "",
+          "description": "Agent Code Display/Hide the Agent code is based on most recent HCAD Policy",
+          "page": 15
+        },
+        {
+          "name": "jurs",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Account Jurisdictions",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "file": "t_business_detail.txt",
+      "page_start": 15,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 15
+        },
+        {
+          "name": "ln_num",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Department Group Sorting line",
+          "page": 15
+        },
+        {
+          "name": "dept_grp",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Department Group See Code Descriptions(Personal) - Department Group Or desc_t_04_department_group.txt",
+          "page": 15
+        },
+        {
+          "name": "dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Department Group Description",
+          "page": 15
+        },
+        {
+          "name": "asd_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Most Recent Noticed/Certified Assessed Value group by department code",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "file": "t_jur_exempt.txt",
+      "page_start": 15,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 15
+        },
+        {
+          "name": "tax_dist",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "Taxing District",
+          "page": 15
+        },
+        {
+          "name": "tax_dist_name",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "District Name",
+          "page": 15
+        },
+        {
+          "name": "exempt_cat",
+          "data_type": "varchar",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Exemption Categories",
+          "page": 16
+        },
+        {
+          "name": "exempt_dscr",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Exemption Categories Description",
+          "page": 16
+        },
+        {
+          "name": "pct_exempt",
+          "data_type": "varchar",
+          "size": "9",
+          "allow_null": "",
+          "description": "Percent Ownership * 100",
+          "page": 16
+        },
+        {
+          "name": "exempt_val",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "",
+          "description": "Exemption Value",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "file": "t_jur_tax_dist_exempt_value_rate.txt",
+      "page_start": 16,
+      "fields": [
+        {
+          "name": "RP_TYPE",
+          "data_type": "varchar",
+          "size": "8",
+          "allow_null": "NO",
+          "description": "Property Type; P - Personal",
+          "page": 16
+        },
+        {
+          "name": "tax_dist",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "Tax District Code",
+          "page": 16
+        },
+        {
+          "name": "name",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Tax District Name",
+          "page": 16
+        },
+        {
+          "name": "exempt_cd",
+          "data_type": "char",
+          "size": "3",
+          "allow_null": "NO",
+          "description": "Exemption Code",
+          "page": 16
+        },
+        {
+          "name": "prop",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Proposed Millage Rate",
+          "page": 16
+        },
+        {
+          "name": "curr",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Current Millage Rate",
+          "page": 16
+        },
+        {
+          "name": "exempt_val",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Exemption Value",
+          "page": 16
+        },
+        {
+          "name": "exempt_rate",
+          "data_type": "varchar",
+          "size": "8",
+          "allow_null": "",
+          "description": "Exemption Percentage",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "file": "t_jur_value.txt",
+      "page_start": 16,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "NO",
+          "description": "Account Number",
+          "page": 16
+        },
+        {
+          "name": "tax_dist",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "Taxing District Code See Code Descriptions(Personal) \u2013 Jurisdictions Or desc_t_05_jurisdictions.txt",
+          "page": 16
+        },
+        {
+          "name": "tp_cd",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "",
+          "description": "Taxing District Type See Code Descriptions(Personal) \u2013 Jurisdictions Type Or desc_t_06_jurisdiction_type.txt",
+          "page": 16
+        },
+        {
+          "name": "pct_district",
+          "data_type": "varchar",
+          "size": "13",
+          "allow_null": "",
+          "description": "Additional Taxing Districts Percent",
+          "page": 16
+        },
+        {
+          "name": "appraised_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Certified Assessed Value/Noticed Assessed Value",
+          "page": 16
+        },
+        {
+          "name": "taxable_val",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "",
+          "description": "Certified Taxable Value/Noticed Taxable Value",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "file": "t_pp_e.txt",
+      "page_start": 16,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "NO",
+          "description": "Account Number of Minerals",
+          "page": 16
+        },
+        {
+          "name": "sched_cd",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "",
+          "description": "Schedule Codes of Minerals",
+          "page": 16
+        },
+        {
+          "name": "Div_ord",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Railroad Commission Lease Number",
+          "page": 16
+        },
+        {
+          "name": "Type_Interest",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Owner Interest Type",
+          "page": 16
+        },
+        {
+          "name": "Interest_Percent",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Owner Interest Percent",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "file": "t_pp_l.txt",
+      "page_start": 16,
+      "fields": [
+        {
+          "name": "acct",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "NO",
+          "description": "Account Number of Electrical Transmission",
+          "page": 17
+        },
+        {
+          "name": "sched_cd",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "",
+          "description": "Schedule Codes of Electrical Transmission",
+          "page": 17
+        },
+        {
+          "name": "type_structure",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Electrical Structure",
+          "page": 17
+        },
+        {
+          "name": "volt_amp",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Electrical Volt Amps",
+          "page": 17
+        },
+        {
+          "name": "el_mileage",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Electrical Mileage",
+          "page": 17
+        },
+        {
+          "name": "Num_of_circuits",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Electrical Circuits",
+          "page": 17
+        },
+        {
+          "name": "contract_acct",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Contractor Account Number",
+          "page": 17
+        },
+        {
+          "name": "_______________________",
+          "data_type": "",
+          "size": "",
+          "allow_null": "",
+          "description": "",
+          "page": 17
+        },
+        {
+          "name": "Code Description",
+          "data_type": "Files",
+          "size": "",
+          "allow_null": "",
+          "description": "",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "file": "desc_r_01_state_class.txt",
+      "page_start": 17,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "varchar",
+          "size": "16",
+          "allow_null": "NO",
+          "description": "Property Use Code",
+          "page": 17
+        },
+        {
+          "name": "Dept",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "",
+          "description": "Department",
+          "page": 17
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Description",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "file": "desc_r_02_building_type_code.txt",
+      "page_start": 17,
+      "fields": [
+        {
+          "name": "Type",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Building Type",
+          "page": 17
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "file": "desc_r_03_building_style.txt",
+      "page_start": 17,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Building Style",
+          "page": 17
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "file": "desc_r_04_building_class.txt",
+      "page_start": 17,
+      "fields": [
+        {
+          "name": "Class",
+          "data_type": "char",
+          "size": "3",
+          "allow_null": "NO",
+          "description": "Building Class",
+          "page": 17
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "file": "desc_r_05_building_data_elements.txt",
+      "page_start": 17,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Element Category",
+          "page": 17
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "file": "desc_r_06_structural_element_type.txt",
+      "page_start": 18,
+      "fields": [
+        {
+          "name": "Type",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Element Type",
+          "page": 18
+        },
+        {
+          "name": "Category",
+          "data_type": "varchar",
+          "size": "5",
+          "allow_null": "NO",
+          "description": "Element Category",
+          "page": 18
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "file": "desc_r_07_quality_code.txt",
+      "page_start": 18,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "NO",
+          "description": "Quality Code",
+          "page": 18
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "file": "desc_r_08_pgi_category.txt",
+      "page_start": 18,
+      "fields": [
+        {
+          "name": "Category",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "NO",
+          "description": "PGI Category",
+          "page": 18
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "file": "desc_r_09_subarea_type.txt",
+      "page_start": 18,
+      "fields": [
+        {
+          "name": "Type",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "Subarea Type",
+          "page": 18
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "file": "desc_r_10_extra_features.txt",
+      "page_start": 18,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "Use Code",
+          "page": 18
+        },
+        {
+          "name": "Dscr",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "",
+          "description": "Short Description",
+          "page": 18
+        },
+        {
+          "name": "LongDescription",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Long Description",
+          "page": 18
+        },
+        {
+          "name": "Category",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "",
+          "description": "Category",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "file": "desc_r_11_extra_feature_category.txt",
+      "page_start": 18,
+      "fields": [
+        {
+          "name": "Category",
+          "data_type": "char",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "Category",
+          "page": 18
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "file": "desc_r_12_real_jurisdictions.txt",
+      "page_start": 18,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "District Code",
+          "page": 18
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Description",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "file": "desc_r_13_real_jurisdiction_type.txt",
+      "page_start": 19,
+      "fields": [
+        {
+          "name": "Type",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "NO",
+          "description": "Type Code",
+          "page": 19
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "file": "desc_r_14_exemption_category.txt",
+      "page_start": 19,
+      "fields": [
+        {
+          "name": "Category",
+          "data_type": "char",
+          "size": "3",
+          "allow_null": "NO",
+          "description": "Category",
+          "page": 19
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "file": "desc_r_15_land_usecode.txt",
+      "page_start": 19,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Use Code",
+          "page": 19
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "file": "desc_r_16_influence_factors.txt",
+      "page_start": 19,
+      "fields": [
+        {
+          "name": "UseCd",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Use Code",
+          "page": 19
+        },
+        {
+          "name": "InfCd",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Influence Code",
+          "page": 19
+        },
+        {
+          "name": "InfTbl",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "NO",
+          "description": "Influence Table",
+          "page": 19
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "file": "desc_r_17_relationship_type.txt",
+      "page_start": 19,
+      "fields": [
+        {
+          "name": "Type",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "NO",
+          "description": "Relationship Type",
+          "page": 19
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Description",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "file": "desc_r_18_permit_status.txt",
+      "page_start": 19,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "NO",
+          "description": "Permit Status",
+          "page": 19
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Description",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "file": "desc_r_19_permit_code.txt",
+      "page_start": 19,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Permit Code",
+          "page": 20
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "file": "desc_r_20_school_district.txt",
+      "page_start": 20,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "5",
+          "allow_null": "NO",
+          "description": "ISD Number",
+          "page": 20
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "150",
+          "allow_null": "",
+          "description": "Independent School District",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "file": "desc_r_21_market_area.txt",
+      "page_start": 20,
+      "fields": [
+        {
+          "name": "MktArea",
+          "data_type": "varchar",
+          "size": "10",
+          "allow_null": "NO",
+          "description": "Market Area",
+          "page": 20
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "file": "desc_r_22_hisd_section.txt",
+      "page_start": 20,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "varchar",
+          "size": "20",
+          "allow_null": "NO",
+          "description": "Code",
+          "page": 20
+        },
+        {
+          "name": "NeighborhoodGroup",
+          "data_type": "varchar",
+          "size": "30",
+          "allow_null": "",
+          "description": "Neighborhood Group Range",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "file": "desc_r_23_special_codes.txt",
+      "page_start": 20,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "NO",
+          "description": "Special Code",
+          "page": 20
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "NO",
+          "description": "Description",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "file": "desc_r_24_agent_roles.txt",
+      "page_start": 20,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "NO",
+          "description": "Agent Code",
+          "page": 20
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "200",
+          "allow_null": "",
+          "description": "Description",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "file": "desc_r_25_conclusion_code.txt",
+      "page_start": 20,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "NO",
+          "description": "Hearing Conclusion Codes",
+          "page": 20
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "file": "desc_r_26_neighborhood_num_adjust.txt",
+      "page_start": 20,
+      "fields": [
+        {
+          "name": "Neighborhood",
+          "data_type": "varchar",
+          "size": "12",
+          "allow_null": "NO",
+          "description": "Neighborhood Code",
+          "page": 20
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 20
+        },
+        {
+          "name": "Class",
+          "data_type": "varchar",
+          "size": "16",
+          "allow_null": "",
+          "description": "Property Use Code",
+          "page": 21
+        },
+        {
+          "name": "adj_pcent",
+          "data_type": "varchar",
+          "size": "7",
+          "allow_null": "",
+          "description": "Building Adjustment",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "file": "desc_t_01_state_class.txt",
+      "page_start": 21,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "NO",
+          "description": "State Class Code",
+          "page": 21
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "file": "desc_t_02_schedule_code.txt",
+      "page_start": 21,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "NO",
+          "description": "Schedule Code",
+          "page": 21
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 21
+        },
+        {
+          "name": "Class",
+          "data_type": "char",
+          "size": "2",
+          "allow_null": "",
+          "description": "State Class",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "file": "desc_t_03_sic_code.txt",
+      "page_start": 21,
+      "fields": [
+        {
+          "name": "Type",
+          "data_type": "varchar",
+          "size": "8",
+          "allow_null": "NO",
+          "description": "SIC Code",
+          "page": 21
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "SIC Code Description",
+          "page": 21
+        },
+        {
+          "name": "Category",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Trade Code Description",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "file": "desc_t_04_department_group.txt",
+      "page_start": 21,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "4",
+          "allow_null": "NO",
+          "description": "Department Group",
+          "page": 21
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "file": "desc_t_05_jurisdictions.txt",
+      "page_start": 21,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "varchar",
+          "size": "6",
+          "allow_null": "NO",
+          "description": "District Code",
+          "page": 21
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "100",
+          "allow_null": "",
+          "description": "Description",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "file": "desc_t_06_jurisdiction_type.txt",
+      "page_start": 21,
+      "fields": [
+        {
+          "name": "Code",
+          "data_type": "char",
+          "size": "1",
+          "allow_null": "NO",
+          "description": "Type Code",
+          "page": 21
+        },
+        {
+          "name": "Description",
+          "data_type": "varchar",
+          "size": "50",
+          "allow_null": "",
+          "description": "Description",
+          "page": 21
+        },
+        {
+          "name": "Notes",
+          "data_type": "",
+          "size": "",
+          "allow_null": "",
+          "description": "",
+          "page": 22
+        },
+        {
+          "name": "2/11/2024:",
+          "data_type": "",
+          "size": "",
+          "allow_null": "",
+          "description": "",
+          "page": 22
+        },
+        {
+          "name": "All records of",
+          "data_type": "data element type",
+          "size": "FXT",
+          "allow_null": "(Fixtures:",
+          "description": "Total) have been removed from data file",
+          "page": 22
+        },
+        {
+          "name": "desc_r_05_building_data_elements.",
+          "data_type": "",
+          "size": "",
+          "allow_null": "",
+          "description": "",
+          "page": 22
+        },
+        {
+          "name": "All records of",
+          "data_type": "type FXT (Fixtures:",
+          "size": "Total)",
+          "allow_null": "have",
+          "description": "been removed from data file fixtures.",
+          "page": 22
+        },
+        {
+          "name": "12/31/2024:",
+          "data_type": "",
+          "size": "",
+          "allow_null": "",
+          "description": "",
+          "page": 22
+        },
+        {
+          "name": "Text files jur_tax_dist_exempt_value",
+          "data_type": "",
+          "size": "",
+          "allow_null": "and jur_tax_dist_percent_rate",
+          "description": "have been replaced by the file",
+          "page": 22
+        },
+        {
+          "name": "jur_tax_dist_exempt_value_rate.",
+          "data_type": "",
+          "size": "Text",
+          "allow_null": "files t_jur_tax_dist_exempt_value",
+          "description": "and t_jur_tax_dist_percent_rate",
+          "page": 22
+        },
+        {
+          "name": "have been replaced",
+          "data_type": "by the file",
+          "size": "t_jur_tax_dist_exempt_value_rate.",
+          "allow_null": "",
+          "description": "",
+          "page": 22
+        }
+      ]
+    }
+  ]
+}

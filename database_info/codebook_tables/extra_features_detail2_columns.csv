@@ -1,0 +1,21 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,7
+cd,char,6,,Use Code See Code Descriptions(Real) - Extra Features Or desc_r_10_extra_features.txt,7
+dscr,varchar,50,,Use Codes Long Description,7
+grade,char,4,,Grade,7
+cond_cd,char,2,,Condition Code,7
+bld_num,varchar,10,,Extra Features Building Number,7
+length,varchar,10,,Length,7
+width,varchar,10,,Width,7
+units,varchar,13,,Units,7
+unit_price,varchar,14,,Unit Price,7
+adj_unit_price,varchar,16,,Adjusted Unit Price,7
+pct_comp,varchar,5,,Original Condition,7
+act_yr,varchar,4,,Year Built,7
+eff_yr,varchar,4,,Effective Year Built,7
+roll_yr,varchar,4,,Year On Roll,8
+DT,varchar,6,,Use Codes Depreciation Table plus Condition Code,8
+pct_cond,varchar,7,,Percent Condition,8
+dpr_val,varchar,12,,Depreciated Value,8
+note,varchar,50,,Note,8
+asd_val,varchar,12,,Assessed Value,8

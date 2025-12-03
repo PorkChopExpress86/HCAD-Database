@@ -1,0 +1,6 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,7,NO,Account Number,15
+ln_num,varchar,10,NO,Department Group Sorting line,15
+dept_grp,char,4,NO,Department Group See Code Descriptions(Personal) - Department Group Or desc_t_04_department_group.txt,15
+dscr,varchar,50,,Department Group Description,15
+asd_val,varchar,20,,Most Recent Noticed/Certified Assessed Value group by department code,15

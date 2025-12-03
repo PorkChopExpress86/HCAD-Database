@@ -1,0 +1,19 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,10
+num,varchar,10,NO,Classified Ag Land/Market Ag Land - Line Number,10
+use_cd,char,4,,Classified Ag Land/Market Ag Land - Use Code See Code Descriptions(Real) - Land UseCode Or desc_r_15_land_usecode.txt,10
+use_dscr,varchar,50,,Land Use Codes – Description,10
+inf_cd,varchar,4,,Classified Ag Land/Market Ag Land - Influence Code See Code Descriptions(Real) - Influence Factors Or desc_r_16_influence_factors.txt,10
+inf_dscr,varchar,50,,Land Influence Factors - Description,10
+inf_adj,varchar,7,,Land Influence Factors - Percent Adjustment,10
+tp,char,2,,Classified Ag Land/Market Ag Land - Unit Type,10
+uts,varchar,14,,Classified Ag Land/Market Ag Land - Units,10
+sz_fact,varchar,7,,Classified Ag Land/Market Ag Land - Size Factor,10
+inf_fact,varchar,7,,Classified Ag Land/Market Ag Land - Influence Factor,10
+cond,varchar,7,,Classified Ag Land/Market Ag Land - Percent Condition,10
+ovr_dscr,varchar,50,,Land Override Codes - Description,10
+tot_adj,varchar,13,,Classified Ag Land/Market Ag Land - Total Adjustments,10
+unit_prc,varchar,13,,Classified Ag Land/Market Ag Land - Unit Price,10
+adj_unit_prc,varchar,15,,Classified Ag Land/Market Ag Land - Adjusted Unit Price,10
+val,varchar,12,,Classified Ag Land/Market Ag Land - Land Value,10
+ovr_val,varchar,12,,Classified Ag Land/Market Ag Land - Override Value,10

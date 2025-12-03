@@ -1,0 +1,6 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,6
+dos,varchar,10,,Date of Sale Format MM/DD/YYYY,6
+clerk_yr,varchar,10,,Clerk Year,6
+clerk_id,varchar,20,,Clerk ID Number,6
+deed_id,varchar,10,NO,Deed Id,6

@@ -1,0 +1,3 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Code,varchar,6,NO,District Code,21
+Description,varchar,100,,Description,21

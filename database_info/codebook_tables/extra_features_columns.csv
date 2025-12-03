@@ -1,0 +1,12 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,6
+bld_num,varchar,10,,Extra Features Building Number,6
+count,varchar,10,,Account Total Number of Extra Features,6
+grade,char,4,,Grade,6
+cd,char,6,,Use Code See Code Descriptions(Real) - Extra Features Or desc_r_10_extra_features.txt,6
+s_dscr,varchar,10,,Use Codes Description See Code Descriptions(Real) - Extra Features: Dscr,6
+l_dscr,varchar,50,,Use Codes Long Description See Code Descriptions(Real) - Extra Features: LongDescription,6
+cat,char,6,,Use Codes Category: Example See Code Descriptions(Real) -Extra Feature Category Or desc_r_11_extra_feature_category.txt,6
+dscr,varchar,50,,Use Codes Categories Description,6
+note,varchar,50,,Note,6
+uts,varchar,13,,Units,7

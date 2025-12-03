@@ -1,0 +1,4 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Type,char,4,NO,Element Type,18
+Category,varchar,5,NO,Element Category,18
+Description,varchar,50,,Description,18

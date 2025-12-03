@@ -1,0 +1,6 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,10
+ln_num,varchar,10,NO,Owner Name,10
+name,varchar,100,,Owner Line Number,10
+aka,varchar,50,,Owner AKA,10
+pct_own,varchar,6,,Percent Ownership,10

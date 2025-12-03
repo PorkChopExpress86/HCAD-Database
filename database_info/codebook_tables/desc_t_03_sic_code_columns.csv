@@ -1,0 +1,4 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Type,varchar,8,NO,SIC Code,21
+Description,varchar,100,,SIC Code Description,21
+Category,varchar,50,,Trade Code Description,21

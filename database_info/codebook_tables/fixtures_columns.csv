@@ -1,0 +1,6 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,8
+bld_num,varchar,10,,Building Number,8
+type,char,4,NO,Element Category See Code Descriptions(Real) - Building Data (Elements and Fixtures) Or desc_r_05_building_data_elements.txt,8
+type_dscr,varchar,50,,Element Categories Description,8
+units,varchar,12,,Units,8

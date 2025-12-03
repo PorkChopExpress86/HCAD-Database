@@ -1,0 +1,5 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Neighborhood,varchar,12,NO,Neighborhood Code,20
+Description,varchar,50,,Description,20
+Class,varchar,16,,Property Use Code,21
+adj_pcent,varchar,7,,Building Adjustment,21

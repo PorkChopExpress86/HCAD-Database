@@ -1,0 +1,5 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Code,char,6,NO,Use Code,18
+Dscr,varchar,10,,Short Description,18
+LongDescription,varchar,50,,Long Description,18
+Category,char,6,,Category,18

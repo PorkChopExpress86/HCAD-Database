@@ -1,0 +1,4 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Code,char,1,NO,Schedule Code,21
+Description,varchar,50,,Description,21
+Class,char,2,,State Class,21

@@ -1,0 +1,287 @@
+  Harris Central Appraisal District 
+
+HCAD Data Definition Help & FAQ’s 
+
+The HCAD real and personal property data is now stored and maintained in a RDBMS or 
+Relational Database Management System.  Therefore, the data structure is normalized.  
+In other words, you may need to perform SQL joins to link to other tables to get certain 
+data items together.   Knowledge of RDBMS and SQL is critical to successfully viewing 
+the data in HCAD’s download files.   
+
+The basic process we have developed involves importing text files with headers (which 
+were created from exporting our database records).  The instructions for importing can be 
+found in the “Import Instructions” file found at here. 
+
+There are descriptions of fields included in the codebook downloads.  In addition, the 
+names of the actual fields in Database tables describe what the field is.  For example, in 
+the Parcel table, “Owner_pct_1” is the percentage of ownership of the 1st owner, which is 
+found in “owner_name_1.” 
+
+Record Layout information exist on the Help page here. 
+
+Real Property Account Number 
+
+Q: Do account numbers change over time for a property, or do they remain static? 
+A: The account numbers for real property remain static. 
+
+Q: Does the account number follow the property after a sale or does the new owner 
+receive a new account number? 
+A: If the sale is for the entire lot or tract the account number stays with the property.  If it 
+involves a split out and the seller is retaining part of the property, the seller retains the 
+original account number and the buyer gets a new account for the part he or she 
+purchased.  If the seller sells all of his property to two or more different owners, the 
+original account number is deleted and new ones created.  
+
+Q: In some other counties, there is a property ID that is separate from the tax account 
+number.  This keeps the property itself identified separately from the owner's tax account.  
+Does HCAD use this number? 
+
+A:  No, HCAD used to store a PID number, which was very similar to this number 
+separate number used at other counties.  However, with the use of GIS, we no longer 
+keep up with our old PID. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Personal Property Data Changes 
+Mobile homes are no longer located under personal property.  They are under real 
+property and the HCAD account number will always start with “600000”. 
+
+FREEPORT VALUE IS LOCATED UNDER EXEMPTIONS.   
+
+Land Use Codes  
+
+Our land use codes are now “true” land use codes.  The land.txt describe records of the 
+land for each parcel.  The land use codes are used internally within HCAD for valuing the 
+land.    
+
+Some common questions we get about land use codes: 
+
+•  "impr only" means improvement only; it is a code that says this has no land value 
+as we only value the improvement or building of this account as in mobile homes. 
+
+•  “Override” means the appraiser manual overrides the land use value instead of 
+
+being derived by the system.  
+
+•  1000 – Res Vacant Table Val is residential used land that is vacant (could be 
+
+empty lot awaiting a house to be built) 
+
+•  1001 – Res Imprvd Table Val is residential land used to hold an improvement or 
+
+building/house. 
+
+How do I distinguish the land use codes between 1001 and 2001?  Basic difference is 
+they are 2 codes saying the same thing.  1001 is table driven by the system designating 
+residential use of land, as 2001 designates residential use of land that is hard coded, 
+meaning the appraiser manual overrides the land use value. 
+
+Land and Land_ag 
+
+Data in the Land and Land_ag tables consist of one to many land records for each 
+
+parcel or real property account record.  Land data is common land used for non-
+agricultural purpose. 
+
+Not all accounts in Lnd_ag.txt are designated for agricultural use only.  Those 
+properties can be special value or nominal value cases, not just agriculture use.  Any 
+property can be changed to agriculture use if appropriate forms are submitted and it is 
+accepted in our system and by our staff as agriculture use, as any property can be 
+converted from agriculture use back to commercial or residential use by similar 
+processes. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+Land that resides on a condo is valued at 19% of the total market value.  The 
+
+actual size of the land that a condo sits on may be in the legal description of the header 
+account or on the deed at the county clerk’s office. 
+
+Building Type Codes 
+
+Our Building Type codes are found in the building.txt download as “IMPRV_TYPE”, 
+which describes the building or improvement on the land for each parcel.  Building type 
+is more of what our old land use codes were.    
+
+Building Style codes “BUILDING_STYLE_CODE” are a subordinate to the building 
+type and are more descriptive of a building’s use. 
+
+Where are multi-family residential use codes?  Multi-family use codes are in the building 
+style codes 102, 103, 104.   
+
+Auxililiary Improvement means there is not a house on the property but there is some 
+type of Residential Improvement such as a garage, a shed, swimming pool, etc. 
+
+Real Acct (Parcel) Information 
+The Real Acct or Parcel table/text file contains only one record for each HCAD 13-digit 
+account number. 
+
+Address:   
+The full location addresses can be found in the site_addr_1 field, the city in site_addr_2 
+and zip code in site_addr_3 fields, respectively. 
+
+Neighborhood Number/Code: 
+Residential valuation neighborhoods are groups of comparable properties whose 
+boundaries were developed based on location and similarity of property data 
+characteristics. Each neighborhood in a school district has a unique identifier known as a 
+residential valuation number. These neighborhood boundaries are maintained via an on-
+going office and field review. As neighborhoods change, neighborhood lines are redrawn 
+to reflect the changes, and maintain the homogeneity of the neighborhood.   
+Consequently, HCAD does not have a GIS subdivision polygon layer.   
+
+Center Code 
+The center code indicates the individual (HCAD employee or contractor) that is 
+responsible for working and valuing the account. 
+
+Value 
+All values (except for exemption values) for an account are in the Real_Acct data files. 
+Building value – value of improvement – building, house 
+Extra Feature value – value of other feature, such as a detached frame garage or a pool 
+
+ 
+ 
+ 
+ 
+Dates 
+“Splt_date” is mostly equal to bogus date 12-30-1899, which equates to null or empty.   
+“New_Owner_Date” is most often the official date the property switched owners. 
+
+Economic Area 
+Economic areas are HCAD specific physical areas that we designate for the valuation of 
+properties.  We use the same economic models (income models) to value the same type 
+of property within these economic areas.  The designated economic areas are different for 
+the property types i.e. economic area 8 for apartments is not the same as economic area 8 
+for retail properties. 
+
+Economic Building Class 
+Economic building class determines which economic model to use for this type of 
+property.  Within each economic area for each property type, we have built an income 
+model.  This aids in mass appraisal.  If an apartment is in economic area 8 and it is an 
+"A" (economic building class) property, a specific income model is used to value the 
+property.  The properties that are designated "E" economic building class are generally 
+valued using the cost approach rather than the income approach. 
+
+Other 
+DSC_cd is used to designate a Split or Combined parcel and is equal to S or C in only a 
+small percentage of HCAD real accounts.    
+
+The shared_cad field denotes what county the parcel is now fully appraised in.  For 
+example, a shared_cad code of FB, means this parcel is within Fort Bend county and 
+appraised there.   Shared CAD law changed in 2008 and HCAD records still contain these 
+formerly shared cad accounts.    
+
+Building Details 
+All buildings or improvements that are in state class codes A1, A2, A3, A4 are included 
+in building_res.txt.  All other buildings/improvements are in building_other.txt. 
+
+Size or Area  
+All areas are in square feet.   
+
+Heat Area—Living Area or Building sqft of a residential building.   
+
+Base Area—Building Area for commercial properties; Sum of the areas of all the base 
+areas of a commercial property.  Residential properties do not use base area. 
+
+Actual Area—For residential properties this is the base area of the house. 
+
+Gross Area—Usually equal to Actual area, except in 1+1/2 story houses.  Commercial 
+properties do not use Gross Area. 
+
+ 
+ 
+ 
+Effective Area – Effective area differs from living area, generally defined as enclosed, 
+finished, and heated space. Effective area consists of the sum of the living area of the 
+structure and a portion of the area contributed by open or unfinished parts of the structure 
+such as porches, attached garages, attics, and patios. 
+
+Year Built  
+Year the building or improvement was built is found in Building – “date_erected”. 
+
+Story Height 
+Story height can be found in the Fixtures data file.  Once you imported data you would 
+query the units where type = ‘STY’.  If the unit’s value is 2.0, it’s a 2-story house. 
+
+Story height can be found in the Fixtures data file. Once you imported data you would 
+query the units where type = ‘STC’.  If the unit’s value is 10, it is a 10 story commercial 
+building. 
+
+Pools 
+Pools can be found in the Extra Features table once you import the data.  You would 
+query where cat = ‘PL’ 
+
+Living Units 
+The “units” field you see in the “building_other” data file is the number of living units in 
+the complex (apartment or condo.)  The value may be replicated in each row, so you 
+should only count the “unit” value in ONE of the buildings per account. 
+
+Building Count 
+The accurate way to calculate the building count per parcel is to count the 
+“building_num” per each account number in the Building data files.   
+
+Exterior  
+Exterior data contains information about sub areas of the building, such as description 
+and sqft size, on a parcel or real property account.  It is the same data one would see on 
+an www.hcad.org details page under the “Exterior Data” section about a given account.    
+
+Fixtures 
+The percentage office on warehouses is in the Fixtures download.   
+In fixture text file, look for the "OWR" fixture_type and "Office Wharehouse Ratio" 
+description.  The Units field has the percentage. 
+
+Structural Elements  
+The Structural element text file contains stat class codes of 'A1', 'A2','M3','O2' 
+Structural element2 contains 'B1', 'B2','B3','B4','Z1', 'Z2','Z3','Z4','Z5' 
+Structural element3 contains 'F1', 'F2','X0','X1','X2','X3','X4','X5','X6','X7','X8','X9' 
+
+ 
+  
+Each Type Description describes the abbreviated structural element.  The type description 
+is the element and category description is the actual value of the type.   For example, if 
+the type description is “grade adjustment” and the category description is “B”, then this 
+building has a B grade. 
+
+Hearings 
+
+The HEARINGS files can be downloaded under the "Hearings" menu option.  The 
+hearing_type field designates if the hearing is “I” for Informal or “F” for Formal.   
+
+Parcel Tieback 
+
+The parcel tieback is basically a parcel relate table telling what parcels are related to the 
+parent for sales, UDI (undivided interest), economic use (eventually) and abatements, etc. 
+It stores children accounts for various relationships. 
+
+Permits 
+
+The "issue date" is the date that the permit was issued.  The "year" field is used as the 
+inspection year.  For example, an account with a permit issue date of “9/19/2006” and 
+year “2008” was incomplete as of January 1, 2007.  HCAD appraisal plans on conducting 
+another inspection for valuation purposes as of January 1, 2008.  What this means is that 
+for any given year once HCAD has completed their work the permit status and inspection 
+year will be either:  complete with current tax year or incomplete with the next tax year.  
+Any permit status with the current tax year still listed means HCAD has not yet 
+completed work for current tax year.  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

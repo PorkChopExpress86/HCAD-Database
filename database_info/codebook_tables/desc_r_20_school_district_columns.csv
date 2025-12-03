@@ -1,0 +1,3 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Code,char,5,NO,ISD Number,20
+Description,varchar,150,,Independent School District,20

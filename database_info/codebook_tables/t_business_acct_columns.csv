@@ -1,0 +1,40 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,12,NO,Account Number,14
+tax_year,varchar,4,NO,Tax Year,14
+name,varchar,100,,Web Owner Name,14
+bus_name,varchar,100,,Business Name,14
+site_addr,varchar,80,,Location Address,14
+site_city,varchar,50,NO,Mailing City,14
+site_state,varchar,5,NO,Mailing State,14
+site_zip,varchar,10,NO,Mailing Zipcode,14
+mailto,varchar,50,,Mailing Country,14
+mail_addr_1,varchar,50,NO,Mailing Undeliverable Flag,14
+mail_addr_2,varchar,50,NO,Location Street Prefix,14
+mail_city,varchar,50,NO,Location Street Number,14
+mail_state,char,2,,Location Street Number Suffix,14
+mail_zip,varchar,10,NO,Location Street Name,14
+phone,varchar,14,,Location Street Suffix,15
+dscr,varchar,80,,Location Street Suffix Direction,15
+dscr1,varchar,50,NO,Account Department Codes List,15
+dscr2,varchar,50,NO,Description 1,15
+dscr3,varchar,50,NO,Description 2,15
+sched_cd,char,1,,Schedule Code See Code Descriptions(Personal) - Schedule Code Or desc_t_02_schedule_code.txt,15
+sched_code_dscr,varchar,50,,Schedule Codes Description,15
+class_code,char,2,,State Class See Code Descriptions(Personal) – State Class Or desc_t_01_state_class.txt,15
+class_code_dscr,varchar,50,,State Class Codes Description,15
+sic,varchar,8,,SIC Code See Code Descriptions(Personal) – SIC Code: Type Or desc_t_03_sic_code.txt,15
+sic_dscr,varchar,100,,SIC Code Description,15
+sqft,varchar,20,NO,Square Footage,15
+cntr_cd,varchar,10,,Area Code,15
+shared_cad,varchar,1,,Share CAD; Always 'N',15
+key_map,varchar,6,NO,Location Map ID,15
+asd_val,varchar,20,,Assessed Value,15
+prior_asd_val,varchar,20,,Prior Year Value,15
+return_cd,varchar,52,NO,Return Code,15
+value_status,varchar,36,NO,Value Notice Status; Noticed/All Values Pending,15
+noticed,varchar,1,NO,Account Noticed Flag; Y/N,15
+noticed_dt,varchar,10,,Notice Date Format MM/DD/YYYY,15
+protested,varchar,1,NO,Protested Flag,15
+certified_date,varchar,10,,Account Certified Date,15
+agent_id,char,6,,Agent Code Display/Hide the Agent code is based on most recent HCAD Policy,15
+jurs,varchar,100,,Account Jurisdictions,15

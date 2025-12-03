@@ -1,0 +1,6 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,char,25,NO,Account Number,11
+tp,char,2,,Relationship Types See Code Descriptions(Real) - Relationship Type Or desc_r_17_relationship_type.txt,11
+dscr,varchar,100,,Relationship Category Description,11
+related_acct,char,25,,Related Account Number,11
+pct,varchar,9,,Percent Allocated,11

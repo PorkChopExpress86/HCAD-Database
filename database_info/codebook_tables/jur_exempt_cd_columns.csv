@@ -1,0 +1,3 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,8
+exempt_cat,varchar,100,NO,Exemption Types Category List,8

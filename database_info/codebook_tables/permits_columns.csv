@@ -1,0 +1,18 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,11
+id,varchar,10,NO,Permit ID,11
+agency_id,char,4,,Permit Agency ID,11
+status,varchar,1,,Permit Status See Code Descriptions(Real) - Permit Status Or desc_r_18_permit_status.txt,11
+dscr,varchar,50,,Permit Description,11
+dor_cd,varchar,16,,Property Use Code See Code Descriptions(Real) - State Class Or desc_r_01_state_class.txt,11
+permit_type,varchar,10,,Permit Type See Code Descriptions(Real) - Permit Code Or desc_r_19_permit_code.txt,11
+permit_tp_descr,varchar,50,,Permit Type Description,11
+property_tp,varchar,3,,Permit Property Type,11
+issue_date,varchar,10,,Permit Issue Date Format MM/DD/YYYY,11
+yr,varchar,4,,Permit Year,11
+site_num,varchar,9,,Permit Street Number,11
+site_pfx,varchar,2,,Permit Street Prefix,11
+site_str,varchar,50,,Permit Street Name,11
+site_tp,varchar,4,,Permit Street Type,11
+site_sfx,varchar,25,,Permit Street Suffix,11
+site_apt,varchar,6,,Permit Apartment Number,11

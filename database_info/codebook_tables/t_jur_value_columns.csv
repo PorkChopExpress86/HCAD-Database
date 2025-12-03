@@ -1,0 +1,7 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,7,NO,Account Number,16
+tax_dist,varchar,6,NO,Taxing District Code See Code Descriptions(Personal) – Jurisdictions Or desc_t_05_jurisdictions.txt,16
+tp_cd,char,1,,Taxing District Type See Code Descriptions(Personal) – Jurisdictions Type Or desc_t_06_jurisdiction_type.txt,16
+pct_district,varchar,13,,Additional Taxing Districts Percent,16
+appraised_val,varchar,20,,Certified Assessed Value/Noticed Assessed Value,16
+taxable_val,varchar,20,,Certified Taxable Value/Noticed Taxable Value,16

@@ -1,0 +1,72 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,25,NO,Account Number,11
+yr,varchar,4,,Tax Year,11
+mailto,varchar,100,,Web Name plus Mailto,11
+mail_addr_1,varchar,50,,Mailing Address Line 1,11
+mail_addr_2,varchar,50,,Mailing Address Line 2,11
+mail_city,varchar,50,,Mailing City,12
+mail_state,char,2,,Mailing State,12
+mail_zip,varchar,10,,Mailing Zip code,12
+mail_country,varchar,50,,Mailing Country,12
+undeliverable,varchar,1,,Mailing Undeliverable Flag,12
+str_pfx,char,2,,Street Prefix,12
+str_num,varchar,10,,Street Number,12
+str_num_sfx,char,3,,Street Number Suffix,12
+str,varchar,50,,Street Name,12
+str_sfx,varchar,25,,Street Suffix,12
+str_sfx_dir,char,2,,Street Suffix Direction,12
+str_unit,varchar,15,,Street Unit,12
+site_addr_1,varchar,50,,Location Address information,12
+site_addr_2,varchar,50,,City,12
+site_addr_3,varchar,10,,Zip,12
+state_class,varchar,16,,Property Use Code See Code Descriptions(Real) - State Class Or desc_r_01_state_class.txt,12
+school_dist,varchar,5,,ISD Code See Code Descriptions(Real) - School District Or desc_r_20_school_district.txt,12
+map_facet,varchar,6,,Location Street Map,12
+key_map,varchar,6,,Location Map ID,12
+Neighborhood_Code,varchar,12,,Neighborhood Code See real_neighborhood_code.txt: cd,12
+Neighborhood_Grp,varchar,8,,Neighborhoods Group Code See real_neighborhood_code.txt: grp_cd See Code Descriptions(Real): HISD section,12
+Market_Area_1,varchar,8,,Market Area 1 See Code Descriptions(Real) - Market Area Or desc_r_21_market_area.txt,12
+Market_Area_1_Dscr,varchar,50,,Market Areas 1 Description,12
+Market_Area_2,varchar,8,,Market Area 2 See Code Descriptions(Real) - Market Area Or desc_r_21_market_area.txt,12
+Market_Area_2_Dscr,varchar,50,,Market Areas 2 Description,12
+econ_area,varchar,5,,Economic Area,12
+econ_bld_class,char,5,,Economic Building Class,12
+center_code,varchar,5,,Account Center Code,12
+yr_impr,varchar,4,,Parcel Year Improved,12
+yr_annexed,varchar,4,,Parcel Year Annexed,12
+splt_dt,char,20,,blank,12
+dsc_cd,char,2,,Parcel DSC Code,12
+nxt_bld,varchar,10,,Next Building,12
+bld_ar,varchar,20,,Total Building Area,12
+land_ar,varchar,20,,Total Land Area Square Footage,12
+acreage,varchar,14,,Total Land Area Acreage,12
+Cap_acct,varchar,7,,Capped Flag,12
+shared_cad,char,3,,Shared CAD Flag,12
+land_val,varchar,20,,Market Land Value,12
+bld_val,varchar,20,,Building Value,13
+x_features_val,varchar,20,,Extra Feature Value,13
+ag_val,varchar,20,,Classified Land Value,13
+assessed_val,varchar,20,,Assessed Value,13
+tot_appr_val,varchar,20,,Appraised Value,13
+tot_mkt_val,varchar,20,,Market Value,13
+prior_land_val,varchar,20,,Prior Year Market Land Value,13
+prior_bld_val,varchar,20,,Prior Year Building Value,13
+prior_x_features_val,varchar,20,,Prior Year Extra Feature Value,13
+prior_ag_val,varchar,20,,Prior Year Classified Land Value,13
+prior_tot_appr_val,varchar,20,,Prior Year Capped Value,13
+prior_tot_mkt_val,varchar,20,,Prior Year Just Value,13
+new_construction_val,varchar,20,,Total New Construction Value,13
+tot_rcn_val,varchar,20,,Total Building Replace Cost Value,13
+value_status,varchar,36,,Value Notice Status,13
+noticed,varchar,1,,Account Noticed Flag; Y/N,13
+notice_dt,varchar,10,,Account Noticed Date,13
+protested,varchar,1,,Protested Flag,13
+certified_date,varchar,10,,Account Certified Date,13
+rev_dt,varchar,10,,Date Reviewed,13
+rev_by,char,5,,Reviewed By,13
+new_own_dt,varchar,10,,New Owner Date,13
+lgl_1,varchar,50,,Legal Line 1 Description,13
+lgl_2,varchar,50,,Legal Line 2 Description,13
+lgl_3,varchar,50,,Legal Line 3 Description,13
+lgl_4,varchar,50,,Legal Line 4 Description,13
+jurs,varchar,100,,Account Jurisdictions,13

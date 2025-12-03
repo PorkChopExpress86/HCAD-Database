@@ -1,0 +1,6 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,6
+bld_num,varchar,10,,Building Number,6
+sar_cd,char,6,NO,Subarea Type (For example) See Code Descriptions(Real) - Subarea Types Or desc_r_09_subarea_type.txt,6
+sar_dscr,varchar,50,,Subarea Types - Description,6
+area,varchar,10,NO,Actual Area,6

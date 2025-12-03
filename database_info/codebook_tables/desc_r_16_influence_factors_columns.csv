@@ -1,0 +1,5 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+UseCd,char,4,NO,Use Code,19
+InfCd,char,4,NO,Influence Code,19
+InfTbl,char,2,NO,Influence Table,19
+Description,varchar,50,,Description,19

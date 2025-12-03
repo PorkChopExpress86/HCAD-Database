@@ -1,0 +1,129 @@
+  Harris Central Appraisal District 
+
+Instructions to Import the Data Text Files into SQL Server 
+Extracting Data files and supporting documentation have been zipped into a self-extracting executable file 
+called:  
+•  Real_acct_owner.zip  
+•  Real_building_land.zip  
+•  Real_jur_exempt.zip  
+• 
+•  PP_files.zip for Personal Business property  
+•  Hearings_files.zip for Hearing records on both Real and Personal Business property 
+•  Code_description_real.zip for Code Descriptions on Real property.  
+•  Code_description_pp.zip for Code Descriptions on Personal Business property. 
+
+[Real_acct_ownership_history: current year only] 
+
+Files can be downloaded from here. 
+Once the self-extracting executable files (.zip file) are downloaded to your computer, double click the file. 
+Your default Zip (typically WinZip by Windows) extraction tool will be used to unzip or copy the files to 
+the any location on your computer that you choose. 
+
+Note: each ASCII tab-delimited text file contains header. 
+
+HCAD does not provide technical support for the usage of this data  
+
+ 
+ 
+ 
+ 
+ 
+ 
+Import 
+
+Step 1: Selecting the database 
+
+The first step is to go to the Object Explorer -> [Database] -> Tasks and click the “Import Flat File …” as shown 
+in the following figure: 
+
+Once you select the “Import Flat File …” option, you will see a new window containing brief information about 
+how to import the flat files, as shown below: 
+
+ 
+ 
+ 
+ 
+Simply click the “Next” button. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Step 2: Select the file to import 
+
+Click the “Next” button again. 
+
+ 
+ 
+ 
+Step 3: Preview the data 
+
+If your file has loaded successfully, a new window will appear containing a preview of your file, as shown in the 
+following figure: 
+
+You can see that the preview contains data from our Text file. Click the “Next” button. 
+
+ 
+ 
+Step 4: Modify columns 
+
+Once you click the “Next” button on the “Preview Data” screen, you will see the “Modify Columns” screen 
+where you can modify the details of the columns of your table, as shown in the following screenshot: 
+
+In the above figure, you can see that each column in the text file has been assigned a default data type. 
+However, you need to change the data type and data size which match each table format (see link: 
+pdataCodebook.pdf ) by simply clicking the drop-down list in front of each column as shown below: 
+
+ 
+ 
+ 
+ 
+ 
+Furthermore, you can also set a column as the Primary key and allow Null values for any column. Once you are 
+done with modifying the columns, click the “Next” button. 
+
+ 
+ 
+Step 5: Viewing the summary 
+
+A new window displaying the summary of the operation including the name of the Server, Database, Table 
+and the file that is being imported will be displayed. This is shown in the following screenshot: 
+
+Click the “Finish” button. 
+
+ 
+ 
+Step 6: Process completion 
+Depending upon the size of the file, the SQL Server will take some time to import the file. Once the file is 
+successfully imported, without any errors, you will see the following screen: 
+
+Since we imported the file into our “_Demo” database in the “arb_hearings_pp” table, the “_Demo” database 
+should contain a table named “arb_hearings_pp”. Go to Object Explorer-> Databases -> _Demo-> Tables, here 
+you should see your data table “dbo.arb_hearings_pp”, as shown below: 
+
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,5 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,char,25,NO,Account Number,10
+purchase_date,varchar,10,,New Owner Date,10
+name,varchar,100,,Owner Name,10
+site_address,varchar,100,,Location Address,10

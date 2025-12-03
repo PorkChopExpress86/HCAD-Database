@@ -1,0 +1,7 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13 NO,Account,Number,9
+tax_district,varchar,6 NO,Taxing,District Code Code Descriptions(Real) - Real Jurisdictions desc_r_12_real_jurisdictions.txt,9
+tp_cd,char,1,Taxing,District Type Code Descriptions(Real) - Real Jurisdiction Type desc_r_13_real_jurisdiction_type.txt,9
+pct_district,varchar,7,Additional,Districts Percent,9
+appraised_val,varchar,20,Capped,Value,9
+taxable_val,varchar,20,Taxable,Value,9

@@ -1,0 +1,9 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Commercial Coded Structural Elements Account,14
+bld_num,varchar,10,NO,Coded Structural Elements - Building Number,14
+code,varchar,5,,Coded Structural Element Type See Code Descriptions(Real) - Structural Element Type Or desc_r_06_structural_element_type.txt,14
+adj,varchar,11,,Building Adjustment Amount,14
+type,char,4,NO,Coded Structural Elements Category See Code Descriptions(Real) - Building Data (Elements and Fixtures): Or desc_r_05_building_data_elements.txt,14
+type_dscr,varchar,50,,Structural Elements Category Description,14
+category_dscr,varchar,50,,Structural Element Types Description,14
+dor_cd,char,4,,Property Use Code See Code Descriptions(Real) - State Class Or desc_r_01_state_class.txt,14

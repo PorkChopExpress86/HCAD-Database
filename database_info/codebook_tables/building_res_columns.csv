@@ -1,0 +1,32 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,25,NO,Account Number,5
+property_use_cd,varchar,16,,Property Use Code See Code Descriptions(Real) - State Class: Code Or desc_r_01_state_class.txt,5
+bld_num,varchar,10,NO,Building Number,5
+impr_tp,char,4,,Building Type See Code Descriptions(Real) - Building Type Code Or desc_r_02_building_type_code.txt,5
+impr_mdl_cd,char,4,,Building Style See Code Descriptions(Real) - Building Style Or desc_r_03_building_style.txt,5
+structure,char,3,,Building Class See Code Descriptions(Real) - Building Class Or desc_r_04_building_class.txt,5
+structure_dscr,varchar,50,,Class of improvement - Description,5
+dpr_val,varchar,12,,Depreciated Value,5
+cama_replacement_cost,varchar,12,,Replacement Cost,5
+accrued_depr_pct,varchar,9,,Accrued Replacement Cost,5
+qa_cd,char,2,,Quality Code See Code Descriptions(Real) - Quality Code Or desc_r_07_quality_code.txt,5
+dscr,varchar,50,NO,Building Quality Codes - Description,5
+date_erected,varchar,4,,Actual Year Built,5
+eff,varchar,4,,Effective Year Built,5
+yr_remodel,varchar,4,NO,Year Remodeled,5
+yr_roll,char,4,NO,Year On Roll,5
+appr_by,char,5,NO,Building Appraisal By,5
+appr_dt,varchar,10,,Date Appraised Format MM/DD/YYYY,5
+notes,varchar,150,,Note,5
+im_sq_ft,varchar,10,NO,Base Area,5
+act_ar,varchar,10,NO,Actual Area,5
+heat_ar,varchar,10,NO,Heated Area,6
+gross_ar,varchar,10,NO,Gross Area,6
+eff_ar,varchar,10,NO,Effective Area,6
+base_ar,varchar,10,NO,Base Area,6
+perimeter,varchar,10,NO,Perimeter,6
+pct,varchar,5,NO,Percent Complete,6
+bld_adj,varchar,7,NO,Building Adjustment,6
+rcnld,varchar,14,,Building Replace Cost New,6
+size_index,varchar,10,NO,Building Price Adjustment,6
+lump_sum_adj,varchar,12,NO,Building Total Unit Adjustment,6

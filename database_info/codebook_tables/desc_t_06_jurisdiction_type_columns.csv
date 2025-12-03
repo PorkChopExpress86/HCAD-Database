@@ -1,0 +1,12 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Code,char,1,NO,Type Code,21
+Description,varchar,50,,Description,21
+Notes,,,,,22
+2/11/2024:,,,,,22
+All records of,data element type,FXT,(Fixtures:,Total) have been removed from data file,22
+desc_r_05_building_data_elements.,,,,,22
+All records of,type FXT (Fixtures:,Total),have,been removed from data file fixtures.,22
+12/31/2024:,,,,,22
+Text files jur_tax_dist_exempt_value,,,and jur_tax_dist_percent_rate,have been replaced by the file,22
+jur_tax_dist_exempt_value_rate.,,Text,files t_jur_tax_dist_exempt_value,and t_jur_tax_dist_percent_rate,22
+have been replaced,by the file,t_jur_tax_dist_exempt_value_rate.,,,22

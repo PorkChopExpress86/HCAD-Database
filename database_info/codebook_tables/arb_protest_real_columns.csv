@@ -1,0 +1,4 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,4
+protested_by,varchar,6,,Latest Protest Represent (Owner/Agent) Display/Hide the Agent code is based on most recent HCAD Policy,4
+protested_dt,varchar,10,,Latest Protest date,4

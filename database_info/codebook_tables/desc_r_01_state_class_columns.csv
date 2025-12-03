@@ -1,0 +1,4 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Code,varchar,16,NO,Property Use Code,17
+Dept,char,4,,Department,17
+Description,varchar,100,,Description,17

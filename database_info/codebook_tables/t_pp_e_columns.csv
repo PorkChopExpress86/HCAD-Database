@@ -1,0 +1,6 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,7,NO,Account Number of Minerals,16
+sched_cd,char,1,,Schedule Codes of Minerals,16
+Div_ord,varchar,100,,Railroad Commission Lease Number,16
+Type_Interest,varchar,100,,Owner Interest Type,16
+Interest_Percent,varchar,100,,Owner Interest Percent,16

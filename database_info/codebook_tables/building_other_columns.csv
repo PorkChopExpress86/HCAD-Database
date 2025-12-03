@@ -1,0 +1,38 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,25,NO,Account Number,4
+property_use_cd,varchar,16,,Property Use Code See Code Descriptions(Real) - State Class: Code Or desc_r_01_state_class.txt,4
+bld_num,varchar,10,NO,Building Number,4
+impr_tp,char,4,,Building Type See Code Descriptions(Real) - Building Type Code Or desc_r_02_building_type_code.txt,4
+impr_mdl_cd,char,4,,Building Style See Code Descriptions(Real) - Building Style Or desc_r_03_building_style.txt,4
+structure,char,3,,Building Class See Code Descriptions(Real) - Building Class Or desc_r_04_building_class.txt,4
+structure_dscr,varchar,50,,Class of improvement - Description,4
+noticed_Depr_Val,varchar,12,,Noticed Depreciated Value,4
+Depr_Val,varchar,12,,Depreciated Value,4
+MS_replacement_cost,varchar,12,,Alternate Replacement Cost,4
+cama_replacement_cost,varchar,12,,Replacement Cost,4
+accrued_depr_pct,varchar,9,,Accrued Depreciation,4
+qa_cd,char,2,,Quality Code See Code Descriptions(Real) - Quality Code Or desc_r_07_quality_code.txt,4
+dscr,varchar,50,,Quality Codes - Description,4
+date_erected,varchar,4,,Actual Year Built,4
+eff,varchar,4,,Effective Year Built,4
+yr_remodel,char,4,,Year Remodeled,4
+yr_roll,char,4,NO,Year On Roll,4
+appr_by,char,5,NO,Building Appraisal By,4
+appr_dt,varchar,10,,Date Appraised Format MM/DD/YYYY,4
+notes,varchar,150,,Note,4
+im_sq_ft,varchar,10,NO,Improvement Area,4
+act_ar,varchar,10,NO,Actual Area,5
+heat_ar,varchar,10,NO,Heated Area,5
+gross_ar,varchar,10,NO,Gross Area,5
+eff_ar,varchar,10,NO,Effective Area,5
+base_ar,varchar,10,NO,Base Area,5
+perimeter,varchar,10,NO,Perimeter,5
+pct,varchar,5,NO,Percent Complete,5
+category,char,2,NO,Income - PGI Category See Code Descriptions(Real) – PGI Category Or desc_r_08_pgi_category.txt,5
+pgi_dscr,varchar,50,NO,Potential Gross Income Categories - Description,5
+prop_nm,varchar,50,NO,PGI Income Survey - Property Name,5
+units,varchar,15,NO,Locations - Street Unit,5
+nra,varchar,20,,Net Rentable Area (sqft),5
+lease_rt,varchar,10,NO,PGI Income Survey - Lease Rate,5
+occ_rt,varchar,10,NO,PGI Income Survey - Occupied Rate,5
+tot_inc,varchar,12,NO,Income - Total Income,5

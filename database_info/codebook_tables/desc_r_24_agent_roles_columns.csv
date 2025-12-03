@@ -1,0 +1,3 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Code,char,2,NO,Agent Code,20
+Description,varchar,200,,Description,20

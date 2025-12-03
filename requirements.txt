@@ -1,0 +1,13 @@
+requests>=2.20
+beautifulsoup4>=4.9
+tqdm>=4.0
+flask>=2.2
+psycopg2-binary>=2.9
+gunicorn>=20.1
+sqlalchemy>=2.0
+
+# Tracing / OpenTelemetry
+opentelemetry-api>=1.21.0
+opentelemetry-sdk>=1.21.0
+opentelemetry-exporter-otlp>=1.21.0
+opentelemetry-instrumentation-requests>=0.42b0

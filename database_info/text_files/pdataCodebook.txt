@@ -1,0 +1,4549 @@
+  Harris Central Appraisal District 
+
+Zipfile 
+Name 
+
+Text file Name 
+
+PDATA CODEBOOK 
+
+Description 
+
+arb_hearings_pp.txt 
+
+arb_hearings_real.txt 
+
+arb_protest_pp.txt 
+arb_protest_real.txt 
+
+p
+
+i
+
+deeds.txt 
+owners.txt 
+parcel_tieback.txt 
+permits.txt 
+real_acct.txt 
+
+p
+i
+z
+.
+y
+r
+o
+t
+s
+i
+h
+_
+p
+i
+h
+s
+
+real_mnrl.txt 
+real_neighborhood_code.txt 
+
+  ownership_history.txt  
+(only in current year) 
+
+r
+a
+e
+y
+
+t
+n
+e
+r
+r
+u
+c
+
+n
+i
+
+y
+l
+n
+o
+
+building_other.txt 
+
+building_res.txt 
+exterior.txt 
+
+extra_features.txt 
+
+extra_features_detail1.txt (only in current 
+year) 
+
+extra_features_detail2.txt (only in current 
+year) 
+
+fixtures.txt 
+
+land.txt 
+land_ag.txt 
+
+structural_elem1.txt 
+
+z
+.
+s
+e
+l
+i
+f
+_
+g
+n
+i
+r
+a
+e
+H
+
+p
+i
+z
+.
+r
+e
+n
+w
+o
+_
+t
+c
+c
+a
+_
+l
+a
+e
+R
+
+r
+e
+n
+w
+o
+_
+t
+c
+c
+a
+_
+l
+a
+e
+R
+
+p
+i
+z
+.
+d
+n
+a
+l
+_
+g
+n
+i
+d
+
+l
+i
+
+u
+b
+_
+l
+a
+e
+R
+
+Personal property account, state code, owner, date of hearing, 
+release date, conclusion code, initial and final values and etc. 
+Real property account, state code, owner, date of hearing, release 
+date, conclusion code, initial and final values and etc. 
+Personal property account, protest by, date of protest. 
+Real property account, protest by, date of protest. 
+
+deed information. 
+multiple owners. 
+
+an account including permit type, permit description, and status. 
+account including owner name, owner mailing address, values, 
+site address, and legal descriptions 
+
+Minerals data. (Starting from 2024) 
+neighborhood code, group code and description 
+current ownership history (only in current year). 
+
+all other real properties, such as commercial and information for 
+income producing properties including occupancy rates and 
+operating income. 
+all residential information. 
+general data about buildings and sub areas, (style or use, 
+size, year built). 
+extra features for an account. This includes wood deck, pool, 
+storage shed, detached garage, etc. This also contains information 
+on cracked slabs and pools. 
+extra features for an account in residential/Real, Farm & Ranch 
+Improved/Personal Prop. Mobile Home/ Inventory 
+Improved/Condo etc. Except the information in extra_features, this 
+includes each feature’s appraised value, deprecated value etc. 
+(only in current year) 
+extra features for an account not in the extra_features_detail1.txt. 
+Except the information in extra_features, this includes each 
+feature’s appraised value, deprecated value etc. (only in current 
+year) 
+characteristics of the building. This includes bedrooms, fireplace, 
+bathrooms, stories for residential. Also contains wall height, 
+elevators, and other descriptions for commercial property. 
+land use, acreage, and land units. 
+agricultural and timber land information including land use, 
+acreage, and land units. 
+Single Family, Multi Family, Condos, Town homes Home 
+Information (CDU, Grade Adjustment, Physical Condition). 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+structural_elem2.txt 
+
+Commercial and exempt Properties. These files contain structural 
+elements of a property. This includes information like physical 
+condition, grade, exterior wall, and foundation type. 
+
+e
+_
+r
+u
+j
+_
+l
+a
+e
+R
+
+p
+.
+t
+p
+m
+e
+x
+
+jur_exempt.txt 
+
+jur_exempt_cd.txt 
+jur_exemption_dscr.txt 
+jur_tax_dist_exempt_value_rate.txt 
+jur_value.txt 
+
+Lists the jurisdictions and exemptions associated with an account 
+and the tax rates. 
+Lists the exemption code associated with an account. 
+Lists the jurisdictions and their exemption description. 
+Lists the jurisdictions and their exemption values/ percent rates. 
+Lists the jurisdictions and values associated with an account. 
+
+t_business_acct.txt 
+
+t_business_detail.txt 
+t_jur_exempt.txt 
+
+t_jur_tax_dist_exempt_value.txt 
+
+p
+i
+z
+.
+s
+e
+l
+i
+f
+_
+P
+P
+
+t_jur_value.txt 
+t_pp_c.txt 
+t_pp_e.txt 
+t_pp_l.txt 
+
+account, including owner name, owner mailing address, values, 
+site address, and legal descriptions, all values and etc. 
+account, items, description and item values. 
+Lists the jurisdictions and exemptions associated with an account 
+and the tax rates. 
+Lists the jurisdictions and values/ percent rates associated with an 
+account. 
+Lists the jurisdictions and their exemption values. 
+Pipelines data. 
+Minerals data.(Beginning in 2024, transfer to real_mnrl.txt) 
+Electrical Transmission / Distribution Lines data. 
+
+desc_r_01_state_class.txt 
+desc_r_02_building_type_code.txt 
+desc_r_03_building_style.txt 
+desc_r_04_building_class.txt 
+desc_r_05_building_data_elements.txt 
+desc_r_06_structural_element_type.txt 
+desc_r_07_quality_code.txt 
+desc_r_08_pgi_category.txt 
+desc_r_09_subarea_type.txt 
+desc_r_10_extra_features.txt 
+desc_r_11_extra_feature_category.txt 
+desc_r_12_real_jurisdictions.txt 
+desc_r_13_real_jurisdiction_type.txt 
+desc_r_14_exemption_category.txt 
+desc_r_15_land_usecode.txt 
+desc_r_16_influence_factors.txt 
+desc_r_17_relationship_type.txt 
+desc_r_18_permit_status.txt 
+desc_r_19_permit_code.txt 
+desc_r_20_school_district.txt 
+desc_r_21_market_area.txt 
+desc_r_22_hisd_section.txt 
+desc_r_23_special_codes.txt 
+desc_r_24_agent_roles.txt 
+desc_r_25_conclusion_code.txt 
+desc_r_26_neighborhood_num_adjust.txt  Neighborhood Number Adjustment. 
+
+Real Property State class. It is also called Property Uses. 
+Building Improvement Types Code. 
+Building Styles. 
+Building Class of improvement. 
+Building Data (Elements and Fixtures), Element Categories 
+Structural Element Types. 
+Quality Code. 
+Potential Gross Income Categories. 
+Subarea Types. 
+Extra Features Use Codes. 
+Extra Feature Categories. 
+Real Property Jurisdictions. 
+Real Property Jurisdiction Type. 
+Exemption Categories. 
+Land Use Codes. 
+Land Influence Factors. 
+Real Property Relationship Types. 
+Permit Status. 
+Permit Codes. 
+Independent School District. 
+Market Areas. 
+HISD section. 
+Special Codes 
+Agent Roles. 
+Conclusion code to reflect the results of a hearing. 
+
+desc_t_01_state_class.txt 
+desc_t_02_schedule_code.txt 
+desc_t_03_sic_code.txt 
+desc_t_04_department_group.txt 
+desc_t_05_jurisdictions.txt 
+desc_t_06_jurisdiction_type.txt 
+
+Personal Property State Class Codes. 
+Schedule Codes. 
+SIC Codes. 
+Department Groups. 
+Personal Property Jurisdictions. 
+Personal Property Jurisdiction Type. 
+
+p
+i
+z
+.
+l
+a
+e
+r
+_
+n
+o
+i
+t
+p
+i
+r
+c
+s
+e
+d
+_
+e
+d
+o
+C
+
+i
+r
+c
+s
+e
+d
+_
+e
+d
+o
+C
+
+p
+i
+z
+.
+p
+p
+_
+n
+o
+i
+t
+p
+
+The following references can be found from here. They are associated with the selected year. 
+
+Code Descriptions(Real) 
+Code Descriptions(Personal) 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Text file: arb_hearings_pp 
+
+Size  Allow 
+
+Description 
+
+Column Name 
+
+acct 
+Tax_Year 
+Personal 
+Hearing_Type 
+State_Class_Code 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+char 
+char 
+
+Null 
+NO 
+
+NO 
+
+7 
+4 
+1 
+1 
+2 
+
+Account Number 
+ARB Hearing Tax Year 
+Property Type; P - Personal Property 
+ARB Hearing State 
+State Class Code 
+See Code Descriptions(Personal) - Schedule Code: Class 
+Or desc_t_02_schedule_code.txt 
+Website Owner name 
+Published scheduled date for informal meetings 
+Format MM/DD/YYYY 
+Actual Hearing Start Date 
+Format MM/DD/YYYY 
+ARB Hearing Release Date 
+Format MM/DD/YYYY 
+ARB Conclusion Code 
+See Code Descriptions(Real) – Conclusion Code 
+Or desc_r_25_conclusion_code.txt 
+ARB Hearing Agent ID 
+Display/Hide the Agent code is based on most recent HCAD 
+Policy 
+Noticed Appraised Value 
+Final Appraised Value 
+
+Account Number 
+ARB Hearing Tax Year 
+Property Type; R - Real Property 
+
+State Class Code 
+See Code Descriptions(Real) - State Class: Dept 
+Or desc_r_01_state_class.txt 
+Website Owner name 
+Published scheduled date for informal meetings 
+Format MM/DD/YYYY 
+Actual Hearing Start Date 
+Format MM/DD/YYYY 
+ARB Hearing Release Date 
+Format MM/DD/YYYY 
+ARB Conclusion Code 
+See Code Descriptions(Real) – Conclusion Code 
+Or desc_r_25_conclusion_code.txt 
+ARB Hearing Agent ID 
+Display/Hide the Agent code is based on most recent HCAD 
+Policy 
+Noticed Appraised Value 
+Notice Market Value 
+Final Appraised Value 
+Final Market Value 
+
+Text file: arb_hearings_real 
+
+Size  Allow 
+
+Description 
+
+Column Name 
+
+acct 
+Tax_Year 
+Real_Personal_Property 
+Hearing_Type 
+State_Class_Code 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+char 
+varchar 
+
+Null 
+NO 
+
+NO 
+
+13 
+4 
+1 
+1 
+16 
+
+Owner_Name 
+Scheduled_for_Date 
+
+varchar 
+varchar 
+
+100 
+10 
+
+Actual_Hearing_Date 
+
+varchar 
+
+10 
+
+Release_Date 
+
+varchar 
+
+10 
+
+Letter_Type 
+
+varchar 
+
+2 
+
+Agent_Code 
+
+char 
+
+6 
+
+Initial_Value 
+Final_Value 
+
+varchar 
+varchar 
+
+20 
+20 
+
+Owner_Name 
+Scheduled_for_Date 
+
+varchar 
+varchar 
+
+100 
+10 
+
+Actual_Hearing_Date 
+
+varchar 
+
+Release_Date 
+
+Letter_Type 
+
+varchar 
+
+varchar 
+
+Agent_Code 
+
+char 
+
+Initial_Appraised_Value  varchar 
+varchar 
+Initial_Market_Value 
+Final_Appraised_Value 
+varchar 
+varchar 
+Final_Market_Value 
+
+10 
+
+10 
+
+2 
+
+6 
+
+20 
+20 
+20 
+20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Text file: arb_protest_pp 
+
+Size  Allow 
+
+Description 
+
+Column Name 
+
+acct 
+protested_by 
+
+Data 
+Type 
+varchar 
+varchar 
+
+Null 
+NO 
+
+7 
+6 
+
+protested_dt 
+
+varchar 
+
+10 
+
+Column Name 
+
+acct 
+protested_by 
+
+Data 
+Type 
+varchar 
+varchar 
+
+Null 
+NO 
+
+13 
+6 
+
+protested_dt 
+
+varchar 
+
+10 
+
+Account Number 
+Latest Protest Represent (Owner/Agent)  
+Display/Hide the Agent code is based on most recent HCAD Policy 
+Latest Protest date 
+
+Text file: arb_protest_real 
+
+Size  Allow 
+
+Description 
+
+Account Number 
+Latest Protest Represent (Owner/Agent)  
+Display/Hide the Agent code is based on most recent HCAD 
+Policy 
+Latest Protest date 
+
+Column Name 
+
+acct 
+property_use_cd 
+
+bld_num 
+impr_tp 
+
+impr_mdl_cd 
+
+structure 
+
+structure_dscr 
+noticed_Depr_Val 
+Depr_Val 
+MS_replacement_cost 
+cama_replacement_cost 
+accrued_depr_pct 
+qa_cd 
+
+dscr 
+date_erected 
+eff 
+yr_remodel 
+yr_roll 
+appr_by 
+appr_dt 
+notes 
+im_sq_ft 
+
+Data 
+Type 
+varchar 
+varchar 
+
+varchar 
+char 
+
+char 
+
+char 
+
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+char 
+
+varchar 
+varchar 
+varchar 
+char 
+char 
+char 
+varchar 
+varchar 
+varchar 
+
+Text file: building_other 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+NO 
+
+NO 
+NO 
+
+NO 
+
+25 
+16 
+
+10 
+4 
+
+4 
+
+3 
+
+50 
+12 
+12 
+12 
+12 
+9 
+2 
+
+50 
+4 
+4 
+4 
+4 
+5 
+10 
+150 
+10 
+
+Account Number 
+Property Use Code 
+See Code Descriptions(Real) - State Class: Code 
+Or desc_r_01_state_class.txt 
+Building Number 
+Building Type 
+See Code Descriptions(Real) - Building Type Code 
+Or desc_r_02_building_type_code.txt 
+Building Style 
+See Code Descriptions(Real) - Building Style 
+Or desc_r_03_building_style.txt 
+Building Class 
+See Code Descriptions(Real) - Building Class 
+Or desc_r_04_building_class.txt 
+Class of improvement - Description 
+Noticed Depreciated Value 
+Depreciated Value 
+Alternate Replacement Cost 
+Replacement Cost 
+Accrued Depreciation 
+Quality Code 
+See Code Descriptions(Real) - Quality Code 
+Or desc_r_07_quality_code.txt 
+Quality Codes - Description 
+Actual Year Built 
+Effective Year Built 
+Year Remodeled 
+Year On Roll 
+Building Appraisal By 
+Date Appraised Format MM/DD/YYYY 
+Note 
+Improvement Area 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+act_ar 
+heat_ar 
+gross_ar 
+eff_ar 
+base_ar 
+perimeter 
+pct 
+category 
+
+pgi_dscr 
+prop_nm 
+units 
+nra 
+lease_rt 
+occ_rt 
+tot_inc 
+
+Column Name 
+
+acct 
+property_use_cd 
+
+bld_num 
+impr_tp 
+
+impr_mdl_cd 
+
+structure 
+
+structure_dscr 
+dpr_val 
+cama_replacement_cost 
+accrued_depr_pct 
+qa_cd 
+
+dscr 
+date_erected 
+eff 
+yr_remodel 
+yr_roll 
+appr_by 
+appr_dt 
+notes 
+im_sq_ft 
+act_ar 
+
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+char 
+
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Data 
+Type 
+varchar 
+varchar 
+
+varchar 
+char 
+
+char 
+
+char 
+
+varchar 
+varchar 
+varchar 
+varchar 
+char 
+
+varchar 
+varchar 
+varchar 
+varchar 
+char 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+
+10 
+10 
+10 
+10 
+10 
+10 
+5 
+2 
+
+50 
+50 
+15 
+20 
+10 
+10 
+12 
+
+NO 
+NO 
+NO 
+NO 
+NO 
+NO 
+NO 
+NO 
+
+NO 
+NO 
+NO 
+
+NO 
+NO 
+NO 
+
+Actual Area 
+Heated Area 
+Gross Area 
+Effective Area 
+Base Area 
+Perimeter 
+Percent Complete 
+Income - PGI Category 
+See Code Descriptions(Real) – PGI Category 
+Or desc_r_08_pgi_category.txt 
+Potential Gross Income Categories - Description 
+PGI Income Survey - Property Name 
+Locations - Street Unit 
+Net Rentable Area (sqft) 
+PGI Income Survey - Lease Rate 
+PGI Income Survey - Occupied Rate 
+Income - Total Income 
+
+Text file: building_res 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+NO 
+
+25 
+16 
+
+10 
+4 
+
+4 
+
+3 
+
+50 
+12 
+12 
+9 
+2 
+
+50 
+4 
+4 
+4 
+4 
+5 
+10 
+150 
+10 
+10 
+
+NO 
+
+NO 
+NO 
+NO 
+
+NO 
+NO 
+
+Account Number 
+Property Use Code 
+See Code Descriptions(Real) - State Class: Code 
+Or desc_r_01_state_class.txt 
+Building Number 
+Building Type 
+See Code Descriptions(Real) - Building Type Code 
+Or desc_r_02_building_type_code.txt 
+Building Style 
+See Code Descriptions(Real) - Building Style 
+Or desc_r_03_building_style.txt 
+Building Class 
+See Code Descriptions(Real) - Building Class 
+Or desc_r_04_building_class.txt 
+Class of improvement - Description 
+Depreciated Value 
+Replacement Cost 
+Accrued Replacement Cost 
+Quality Code 
+See Code Descriptions(Real) - Quality Code 
+Or desc_r_07_quality_code.txt 
+Building Quality Codes - Description 
+Actual Year Built 
+Effective Year Built 
+Year Remodeled 
+Year On Roll 
+Building Appraisal By 
+Date Appraised Format MM/DD/YYYY 
+Note 
+Base Area 
+Actual Area 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+heat_ar 
+gross_ar 
+eff_ar 
+base_ar 
+perimeter 
+pct 
+bld_adj 
+rcnld 
+size_index 
+lump_sum_adj 
+
+Column Name 
+
+acct 
+dos 
+clerk_yr 
+clerk_id 
+deed_id 
+
+Column Name 
+
+acct 
+bld_num 
+sar_cd 
+
+sar_dscr 
+area 
+
+Column Name 
+
+acct 
+bld_num 
+count 
+grade 
+cd 
+
+s_dscr 
+
+l_dscr 
+
+cat 
+
+dscr 
+note 
+
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+10 
+10 
+10 
+10 
+10 
+5 
+7 
+14 
+10 
+12 
+
+NO 
+NO 
+NO 
+NO 
+NO 
+NO 
+NO 
+
+NO 
+NO 
+
+Heated Area 
+Gross Area 
+Effective Area 
+Base Area 
+Perimeter 
+Percent Complete 
+Building Adjustment 
+Building Replace Cost New 
+Building Price Adjustment 
+Building Total Unit Adjustment 
+
+Text file: deeds 
+Primary Key: acct, deed_id 
+Description 
+
+Size  Allow 
+
+Null 
+NO 
+
+NO 
+
+13 
+10 
+10 
+20 
+10 
+
+Account Number 
+Date of Sale Format MM/DD/YYYY 
+Clerk Year 
+Clerk ID Number 
+Deed Id 
+
+Text file: exterior 
+
+Size  Allow 
+
+Data 
+Type 
+Null 
+varchar  13  NO 
+varchar  10 
+6 
+char 
+
+NO 
+
+varchar  50 
+varchar  10  NO 
+
+Description 
+
+Account Number 
+Building Number 
+Subarea Type (For example) 
+See Code Descriptions(Real) - Subarea Types 
+Or desc_r_09_subarea_type.txt 
+Subarea Types - Description 
+Actual Area 
+
+Text file: extra_features 
+
+Size  Allow 
+
+Description 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+char 
+char 
+
+Null 
+NO 
+
+13 
+10 
+10 
+4 
+6 
+
+varchar 
+
+10 
+
+varchar 
+
+50 
+
+char 
+
+6 
+
+varchar 
+varchar 
+
+50 
+50 
+
+Account Number 
+Extra Features Building Number 
+Account Total Number of Extra Features 
+Grade 
+Use Code 
+See Code Descriptions(Real) - Extra Features 
+Or desc_r_10_extra_features.txt 
+Use Codes Description 
+See Code Descriptions(Real) - Extra Features: Dscr 
+Use Codes Long Description 
+See Code Descriptions(Real) - Extra Features: LongDescription  
+Use Codes Category: Example 
+See Code Descriptions(Real) -Extra Feature Category 
+Or desc_r_11_extra_feature_category.txt 
+Use Codes Categories Description 
+Note 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+uts 
+
+varchar 
+
+13 
+
+Units 
+
+Column Name 
+
+acct 
+cd 
+
+dscr 
+grade 
+cond_cd 
+bld_num 
+length 
+width 
+units 
+unit_price 
+adj_unit_price 
+pct_comp 
+act_yr 
+eff_yr 
+roll_yr 
+DT 
+pct_cond 
+dpr_val 
+note 
+asd_val 
+
+Column Name 
+
+acct 
+cd 
+
+dscr 
+grade 
+cond_cd 
+bld_num 
+length 
+width 
+units 
+unit_price 
+adj_unit_price 
+pct_comp 
+act_yr 
+eff_yr 
+
+Text file: extra_features_detail1 
+(Only in current year) 
+Description 
+
+Size  Allow 
+
+Null 
+NO 
+
+13 
+6 
+
+50 
+4 
+2 
+10 
+10 
+10 
+13 
+14 
+16 
+5 
+4 
+4 
+4 
+6 
+7 
+12 
+50 
+12 
+
+Account Number 
+Use Codex 
+See Code Descriptions(Real) - Extra Features 
+Or desc_r_10_extra_features.txt 
+Use Codes Long Description 
+Grade 
+Condition Code 
+Extra Features Building Number 
+Length 
+Width 
+Units 
+Unit Price 
+Adjusted Unit Price 
+Original Condition 
+Year Built 
+Effective Year Built 
+Year On Roll 
+Use Codes Depreciation Table plus Condition Code 
+Percent Condition 
+Depreciated Value 
+Note 
+Assessed Value 
+
+Data 
+Type 
+varchar 
+char 
+
+varchar 
+char 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Text file: extra_features_detail2 
+(Only in current year) 
+
+Data 
+Type 
+varchar 
+char 
+
+varchar 
+char 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+13 
+6 
+
+50 
+4 
+2 
+10 
+10 
+10 
+13 
+14 
+16 
+5 
+4 
+4 
+
+Account Number 
+Use Code 
+See Code Descriptions(Real) - Extra Features 
+Or desc_r_10_extra_features.txt 
+Use Codes Long Description 
+Grade 
+Condition Code 
+Extra Features Building Number 
+Length 
+Width 
+Units 
+Unit Price 
+Adjusted Unit Price 
+Original Condition 
+Year Built 
+Effective Year Built 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+roll_yr 
+DT 
+
+pct_cond 
+dpr_val 
+note 
+asd_val 
+
+Column Name 
+
+acct 
+bld_num 
+type 
+
+varchar 
+varchar 
+
+varchar 
+varchar 
+varchar 
+varchar 
+
+Data 
+Type 
+varchar 
+varchar 
+char 
+
+type_dscr 
+units 
+
+varchar 
+varchar 
+
+50 
+12 
+
+4 
+6 
+
+7 
+12 
+50 
+12 
+
+Year On Roll 
+Use Codes Depreciation Table plus  
+Condition Code 
+Percent Condition 
+Depreciated Value 
+Note 
+Assessed Value 
+
+Text file: fixtures 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+NO 
+
+13 
+10 
+4 
+
+Account Number 
+Building Number 
+Element Category 
+See Code Descriptions(Real) - Building Data (Elements 
+and Fixtures) 
+Or desc_r_05_building_data_elements.txt 
+Element Categories Description 
+Units 
+
+Text file: jur_exempt 
+Primary Key: acct, tax_district, exempt_cat 
+
+Size  Allow 
+
+Description 
+
+Column Name 
+
+acct 
+tax_district 
+
+Data 
+Type 
+varchar 
+varchar 
+
+Null 
+NO 
+NO 
+
+13 
+6 
+
+exempt_cat 
+
+varchar 
+
+4 
+
+NO 
+
+exempt_val 
+
+varchar 
+
+20 
+
+Account Number 
+Taxing District 
+See Code Descriptions(Real) - Real Jurisdictions 
+Or desc_r_12_real_jurisdictions.txt 
+Exemption Types Category 
+See Code Descriptions(Real) - Exemption Categories 
+Or desc_r_14_exemption_category.txt 
+Exempt Value 
+
+Column Name 
+
+acct 
+exempt_cat 
+
+Column Name 
+
+exempt_cat 
+exemption_dscr 
+
+Data 
+Type 
+varchar 
+varchar 
+
+Data 
+Type 
+varchar 
+varchar 
+
+Text file: jur_exempt_cd 
+Primary Key: acct, exempt_cat 
+Size  Allow 
+
+Description 
+
+Null 
+13 
+NO 
+100  NO 
+
+Account Number 
+Exemption Types Category List 
+
+Text file: jur_exemption_dscr 
+Primary Key: exempt_cat 
+Description 
+
+Size  Allow 
+
+Null 
+NO 
+
+4 
+50 
+
+Exemption Categories 
+Exemption Categories Description 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Text file: jur_tax_dist_exempt_value_rate 
+Primary Key: tax_dist, exempt_cd 
+
+Column Name 
+
+RP_TYPE 
+tax_dist 
+name 
+exempt_cd 
+prop 
+curr 
+exempt_val 
+exempt_rate 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+
+4 
+6 
+100 
+3 
+10 
+10 
+10 
+8 
+
+Property Type; R-Real 
+Taxing District Code 
+Taxing District Name 
+Exemption Code 
+Proposed Millage Rate 
+Current Millage Rate 
+Exemption Value 
+Exemption Percentage 
+
+Column Name  Data 
+Type 
+varchar 
+varchar 
+
+acct 
+tax_district 
+
+Siz
+e 
+13 
+6 
+
+tp_cd 
+
+char 
+
+1 
+
+pct_district 
+appraised_val 
+taxable_val 
+
+varchar 
+varchar 
+varchar 
+
+7 
+20 
+20 
+
+Text file: jur_value   
+Primary Key: acct, tax_district 
+Description 
+
+Allow 
+Null 
+NO 
+NO 
+
+Account Number 
+Taxing District Code 
+See Code Descriptions(Real) - Real Jurisdictions 
+Or desc_r_12_real_jurisdictions.txt 
+Taxing District Type 
+See Code Descriptions(Real) - Real Jurisdiction Type 
+Or desc_r_13_real_jurisdiction_type.txt 
+Additional Districts Percent 
+Capped Value 
+Taxable Value 
+
+Size  Allow 
+
+Text file: land 
+Description 
+
+Data 
+Type 
+varchar 
+varchar 
+char 
+
+Null 
+NO 
+NO 
+
+13 
+10 
+4 
+
+Column Name 
+
+acct 
+num 
+use_cd 
+
+use_dscr 
+inf_cd 
+
+inf_dscr 
+inf_adj 
+tp 
+uts 
+sz_fact 
+inf_fact 
+cond 
+ovr_dscr 
+tot_adj 
+unit_prc 
+adj_unit_prc 
+
+varchar 
+varchar 
+
+50 
+4 
+
+varchar 
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+50 
+7 
+2 
+14 
+7 
+7 
+7 
+50 
+13 
+13 
+15 
+
+Account Number 
+Common or Unclassified Land - Line Number 
+Common or Unclassified Land - Use Code 
+See Code Descriptions(Real) - Land UseCode 
+Or desc_r_15_land_usecode.txt 
+Land Use Codes - Description 
+Common or Unclassified Land - Influence Code 
+See Code Descriptions(Real) - Influence Factors 
+Or desc_r_16_influence_factors.txt 
+Land Influence Factors - Description 
+Land Influence Factors - Percent Adjustment 
+Common or Unclassified Land - Unit Type 
+Common or Unclassified Land - Units 
+Common or Unclassified Land - Size Factor 
+Common or Unclassified Land - Influence Factor 
+Common or Unclassified Land - Percent Condition 
+Land Override Codes - Description 
+Common or Unclassified Land - Total Adjustments 
+Common or Unclassified Land - Unit Price 
+Common or Unclassified Land - Adjusted Unit Price 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+val 
+ovr_val 
+
+varchar 
+varchar 
+
+12 
+12 
+
+Common or Unclassified Land - Land Value 
+Common or Unclassified Land - Override Value 
+
+Text file: land_ag 
+
+Size  Allow 
+
+Description 
+
+Column Name 
+
+acct 
+num 
+use_cd 
+
+Data 
+Type 
+varchar 
+varchar 
+char 
+
+Null 
+NO 
+NO 
+
+13 
+10 
+4 
+
+Account Number 
+Classified Ag Land/Market Ag Land - Line Number 
+Classified Ag Land/Market Ag Land - Use Code 
+See Code Descriptions(Real) - Land UseCode 
+Or desc_r_15_land_usecode.txt 
+Land Use Codes – Description 
+
+Classified Ag Land/Market Ag Land - Influence Code 
+See Code Descriptions(Real) - Influence Factors 
+Or desc_r_16_influence_factors.txt 
+Land Influence Factors - Description 
+Land Influence Factors - Percent Adjustment 
+Classified Ag Land/Market Ag Land - Unit Type 
+Classified Ag Land/Market Ag Land - Units 
+Classified Ag Land/Market Ag Land - Size Factor 
+Classified Ag Land/Market Ag Land - Influence Factor 
+Classified Ag Land/Market Ag Land - Percent Condition 
+Land Override Codes - Description 
+Classified Ag Land/Market Ag Land - Total Adjustments 
+Classified Ag Land/Market Ag Land - Unit Price 
+Classified Ag Land/Market Ag Land - Adjusted Unit Price 
+Classified Ag Land/Market Ag Land - Land Value 
+Classified Ag Land/Market Ag Land - Override Value 
+
+use_dscr 
+
+varchar 
+
+50 
+
+inf_cd 
+
+varchar 
+
+4 
+
+50 
+7 
+2 
+14 
+7 
+7 
+7 
+50 
+13 
+13 
+15 
+12 
+12 
+
+inf_dscr 
+inf_adj 
+tp 
+uts 
+sz_fact 
+inf_fact 
+cond 
+ovr_dscr 
+tot_adj 
+unit_prc 
+adj_unit_prc 
+val 
+ovr_val 
+
+Column Name 
+
+acct 
+ln_num 
+name 
+aka 
+pct_own 
+
+Column Name 
+
+acct 
+purchase_date 
+name 
+site_address 
+
+varchar 
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Data 
+Type 
+char 
+varchar 
+varchar 
+varchar 
+
+Text file: owners 
+Primary Key: acct, ln_num 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+
+13 
+10 
+100 
+50 
+6 
+
+Account Number 
+Owner Name 
+Owner Line Number 
+Owner AKA 
+Percent Ownership 
+
+Text file: ownership_history 
+Primary Key: acct, ln_num 
+(Only in current year) 
+Description 
+
+Size  Allow 
+
+Null 
+NO 
+
+25 
+10 
+100 
+100 
+
+Account Number 
+New Owner Date 
+Owner Name 
+Location Address 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Text file: parcel_tieback 
+
+Size  Allow 
+
+Description 
+
+Column Name 
+
+acct 
+tp 
+
+Data 
+Type 
+char 
+char 
+
+Null 
+NO 
+
+25 
+2 
+
+dscr 
+related_acct 
+pct 
+
+varchar 
+char 
+varchar 
+
+100 
+25 
+9 
+
+Account Number 
+Relationship Types 
+See Code Descriptions(Real) - Relationship Type 
+Or desc_r_17_relationship_type.txt 
+Relationship Category Description 
+Related Account Number 
+Percent Allocated 
+
+Text file: permits 
+Primary Key: acct, id 
+
+Size  Allow 
+
+Description 
+
+Column Name 
+
+acct 
+id 
+agency_id 
+status 
+
+dscr 
+dor_cd 
+
+Data 
+Type 
+varchar 
+varchar 
+char 
+varchar 
+
+varchar 
+varchar 
+
+Null 
+NO 
+NO 
+
+13 
+10 
+4 
+1 
+
+50 
+16 
+
+permit_type 
+
+varchar 
+
+10 
+
+50 
+3 
+10 
+4 
+9 
+2 
+50 
+4 
+25 
+6 
+
+permit_tp_descr 
+property_tp 
+issue_date 
+yr 
+site_num 
+site_pfx 
+site_str 
+site_tp 
+site_sfx 
+site_apt 
+
+Column Name 
+
+acct 
+yr 
+mailto 
+mail_addr_1 
+mail_addr_2 
+
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Account Number 
+Permit ID 
+Permit Agency ID 
+Permit Status 
+See Code Descriptions(Real) - Permit Status 
+Or desc_r_18_permit_status.txt 
+Permit Description 
+Property Use Code 
+See Code Descriptions(Real) - State Class 
+Or desc_r_01_state_class.txt 
+Permit Type 
+See Code Descriptions(Real) - Permit Code 
+Or desc_r_19_permit_code.txt 
+Permit Type Description 
+Permit Property Type 
+Permit Issue Date Format MM/DD/YYYY 
+Permit Year 
+Permit Street Number 
+Permit Street Prefix 
+Permit Street Name 
+Permit Street Type 
+Permit Street Suffix 
+Permit Apartment Number 
+
+Text file: real_acct 
+Primary Key: acct 
+Description 
+
+Size  Allow 
+
+Null 
+NO 
+
+25 
+4 
+100 
+50 
+50 
+
+Account Number 
+Tax Year 
+Web Name plus Mailto 
+Mailing Address Line 1 
+Mailing Address Line 2 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+mail_city 
+mail_state 
+mail_zip 
+mail_country 
+undeliverable 
+str_pfx 
+str_num 
+str_num_sfx 
+str 
+str_sfx 
+str_sfx_dir 
+str_unit 
+site_addr_1 
+site_addr_2 
+site_addr_3 
+
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+char 
+varchar 
+char 
+varchar 
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+
+50 
+2 
+10 
+50 
+1 
+2 
+10 
+3 
+50 
+25 
+2 
+15 
+50 
+50 
+10 
+
+state_class 
+
+varchar 
+
+16 
+
+school_dist 
+
+varchar 
+
+5 
+
+map_facet 
+key_map 
+Neighborhood_Code 
+
+varchar 
+varchar 
+varchar 
+
+6 
+6 
+12 
+
+Neighborhood_Grp 
+
+varchar 
+
+8 
+
+Market_Area_1 
+
+varchar 
+
+8 
+
+Market_Area_1_Dscr 
+Market_Area_2 
+
+varchar 
+varchar 
+
+Market_Area_2_Dscr 
+econ_area 
+econ_bld_class 
+center_code 
+yr_impr 
+yr_annexed 
+splt_dt 
+dsc_cd 
+nxt_bld 
+bld_ar 
+land_ar 
+acreage 
+Cap_acct 
+shared_cad 
+land_val 
+
+varchar 
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+char 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+char 
+varchar 
+
+50 
+8 
+
+50 
+5 
+5 
+5 
+4 
+4 
+20 
+2 
+10 
+20 
+20 
+14 
+7 
+3 
+20 
+
+Mailing City 
+Mailing State 
+Mailing Zip code 
+Mailing Country 
+Mailing Undeliverable Flag 
+Street Prefix 
+Street Number 
+Street Number Suffix 
+Street Name 
+Street Suffix 
+Street Suffix Direction 
+Street Unit 
+Location Address information 
+City 
+Zip 
+
+Property Use Code 
+See Code Descriptions(Real) - State Class 
+Or desc_r_01_state_class.txt 
+ISD Code 
+See Code Descriptions(Real) - School District 
+Or desc_r_20_school_district.txt 
+Location Street Map 
+Location Map ID 
+Neighborhood Code 
+See real_neighborhood_code.txt: cd 
+Neighborhoods Group Code 
+See real_neighborhood_code.txt: grp_cd  
+See Code Descriptions(Real): HISD section 
+Market Area 1 
+See Code Descriptions(Real) - Market Area 
+Or desc_r_21_market_area.txt 
+Market Areas 1 Description 
+Market Area 2 
+See Code Descriptions(Real) - Market Area 
+Or desc_r_21_market_area.txt 
+Market Areas 2 Description 
+Economic Area 
+Economic Building Class 
+Account Center Code 
+Parcel Year Improved 
+Parcel Year Annexed 
+blank 
+Parcel DSC Code 
+Next Building 
+Total Building Area 
+Total Land Area Square Footage 
+Total Land Area Acreage 
+Capped Flag 
+Shared CAD Flag 
+Market Land Value 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+bld_val 
+x_features_val 
+ag_val 
+assessed_val 
+tot_appr_val 
+tot_mkt_val 
+prior_land_val 
+prior_bld_val 
+prior_x_features_val 
+prior_ag_val 
+prior_tot_appr_val 
+prior_tot_mkt_val 
+new_construction_val 
+tot_rcn_val 
+value_status 
+noticed 
+notice_dt 
+protested 
+certified_date 
+rev_dt 
+rev_by 
+new_own_dt 
+lgl_1 
+lgl_2 
+lgl_3 
+lgl_4 
+jurs 
+
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+20 
+20 
+20 
+20 
+20 
+20 
+20 
+20 
+20 
+20 
+20 
+20 
+20 
+20 
+36 
+1 
+10 
+1 
+10 
+10 
+5 
+10 
+50 
+50 
+50 
+50 
+100 
+
+Building Value 
+Extra Feature Value 
+Classified Land Value 
+Assessed Value 
+Appraised Value 
+Market Value 
+Prior Year Market Land Value 
+Prior Year Building Value 
+Prior Year Extra Feature Value 
+Prior Year Classified Land Value 
+Prior Year Capped Value 
+Prior Year Just Value 
+Total New Construction Value 
+Total Building Replace Cost Value 
+Value Notice Status 
+Account Noticed Flag; Y/N 
+Account Noticed Date 
+Protested Flag 
+Account Certified Date 
+Date Reviewed 
+Reviewed By 
+New Owner Date 
+Legal Line 1 Description 
+Legal Line 2 Description 
+Legal Line 3 Description 
+Legal Line 4 Description 
+Account Jurisdictions 
+
+Text file: real_mnrl 
+Primary Key: acct (Output limited to 2024 and beyond) 
+
+Column Name 
+
+acct 
+dor_cd 
+Rail_leasenum 
+Type_Interest 
+Interest_Percent 
+
+Column Name 
+
+cd 
+grp_cd 
+dscr 
+
+Column Name 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+
+Data 
+Type 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+13 
+4 
+100 
+100 
+100 
+
+Account Number of Minerals 
+Property Use Code 
+Railroad Commission Lease Number 
+Owner Interest Type 
+Owner Interest Percent 
+
+Text file: real_neighborhood_code 
+Primary Key: cd 
+Description 
+
+Size  Allow 
+
+Null 
+NO 
+
+11 
+8 
+50 
+
+Neighborhood Code 
+Neighborhoods Group Code 
+Neighborhood Description 
+
+Text file: structural_elem1 
+
+Size  Allow 
+
+Description 
+
+Null 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+acct 
+bld_num 
+code 
+
+adj 
+type 
+
+type_dscr 
+category_dscr 
+dor_cd 
+
+Column Name 
+
+acct 
+bld_num 
+code 
+
+adj 
+type 
+
+type_dscr 
+category_dscr 
+dor_cd 
+
+Column Name 
+
+acct 
+tax_year 
+name 
+bus_name 
+site_addr 
+site_city 
+site_state 
+site_zip 
+mailto 
+mail_addr_1 
+mail_addr_2 
+mail_city 
+mail_state 
+mail_zip 
+
+varchar 
+varchar 
+varchar 
+
+varchar 
+char 
+
+varchar 
+varchar 
+char 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+
+varchar 
+char 
+
+varchar 
+varchar 
+char 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+char 
+varchar 
+
+NO 
+NO 
+NO 
+
+NO 
+
+13 
+10 
+5 
+
+11 
+4 
+
+50 
+50 
+4 
+
+Residential Coded Structural Elements Account 
+Coded Structural Elements - Building Number 
+Coded Structural Element Type 
+See Code Descriptions(Real) - Structural Element Type: Type 
+Or desc_r_06_structural_element_type.txt 
+Building Adjustment Amount 
+Coded Structural Elements Category 
+See Code Descriptions(Real) - Building Data (Elements and Fixtures) 
+Or desc_r_05_building_data_elements.txt 
+Structural Elements Category Description 
+Structural Element Types Description 
+Property Use Code 
+See Code Descriptions(Real) - State Class 
+Or desc_r_01_state_class.txt 
+
+Text file: structural_elem2 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+
+NO 
+
+13 
+10 
+5 
+
+11 
+4 
+
+50 
+50 
+4 
+
+Commercial Coded Structural Elements Account 
+Coded Structural Elements - Building Number 
+Coded Structural Element Type 
+See Code Descriptions(Real) - Structural Element Type 
+Or desc_r_06_structural_element_type.txt 
+Building Adjustment Amount 
+Coded Structural Elements Category 
+See Code Descriptions(Real) - Building Data (Elements and Fixtures): 
+Code 
+Or desc_r_05_building_data_elements.txt 
+Structural Elements Category Description 
+Structural Element Types Description 
+Property Use Code 
+See Code Descriptions(Real) - State Class 
+Or desc_r_01_state_class.txt 
+
+Text file: t_business_acct 
+Primary Key: acct 
+Description 
+
+Size  Allow 
+
+Null 
+NO 
+NO 
+
+NO 
+NO 
+NO 
+
+NO 
+NO 
+NO 
+
+NO 
+
+12 
+4 
+100 
+100 
+80 
+50 
+5 
+10 
+50 
+50 
+50 
+50 
+2 
+10 
+
+Account Number 
+Tax Year 
+Web Owner Name 
+Business Name 
+Location Address 
+Mailing City 
+Mailing State 
+Mailing Zipcode 
+Mailing Country 
+Mailing Undeliverable Flag 
+Location Street Prefix 
+Location Street Number 
+Location Street Number Suffix 
+Location Street Name 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+phone 
+dscr 
+dscr1 
+dscr2 
+dscr3 
+sched_cd 
+
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+char 
+
+sched_code_dscr 
+class_code 
+
+varchar 
+char 
+
+class_code_dscr 
+sic 
+
+sic_dscr 
+sqft 
+cntr_cd 
+shared_cad 
+key_map 
+asd_val 
+prior_asd_val 
+return_cd 
+value_status 
+noticed 
+noticed_dt 
+protested 
+certified_date 
+agent_id 
+
+varchar 
+varchar 
+
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+char 
+
+14 
+80 
+50 
+50 
+50 
+1 
+
+50 
+2 
+
+50 
+8 
+
+100 
+20 
+10 
+1 
+6 
+20 
+20 
+52 
+36 
+1 
+10 
+1 
+10 
+6 
+
+NO 
+NO 
+NO 
+
+NO 
+
+NO 
+
+NO 
+NO 
+NO 
+
+NO 
+
+jurs 
+
+varchar 
+
+100 
+
+Location Street Suffix 
+Location Street Suffix Direction 
+Account Department Codes List 
+Description 1 
+Description 2 
+Schedule Code 
+See Code Descriptions(Personal) - Schedule Code 
+Or desc_t_02_schedule_code.txt 
+Schedule Codes Description 
+State Class 
+See Code Descriptions(Personal) – State Class 
+Or desc_t_01_state_class.txt 
+State Class Codes Description 
+SIC Code 
+See Code Descriptions(Personal) – SIC Code: Type 
+Or desc_t_03_sic_code.txt 
+SIC Code Description 
+Square Footage 
+Area Code 
+Share CAD; Always 'N' 
+Location Map ID 
+Assessed Value 
+Prior Year Value 
+Return Code 
+Value Notice Status; Noticed/All Values Pending 
+Account Noticed Flag; Y/N 
+Notice Date Format MM/DD/YYYY 
+Protested Flag 
+Account Certified Date 
+Agent Code 
+Display/Hide the Agent code is based on most recent HCAD Policy 
+Account Jurisdictions 
+
+Column Name 
+
+acct 
+ln_num 
+dept_grp 
+
+dscr 
+asd_val 
+
+Column Name 
+
+acct 
+tax_dist 
+tax_dist_name 
+
+Data 
+Type 
+varchar 
+varchar 
+char 
+
+varchar 
+varchar 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+
+Text file: t_business_detail 
+Primary Key: acct, ln_num 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+NO 
+
+7 
+10 
+4 
+
+50 
+20 
+
+Account Number 
+Department Group Sorting line 
+Department Group 
+See Code Descriptions(Personal) - Department Group 
+Or desc_t_04_department_group.txt 
+Department Group Description 
+Most Recent Noticed/Certified Assessed Value group by 
+department code 
+
+Text file: t_jur_exempt 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+
+7 
+6 
+100 
+
+Account Number 
+Taxing District 
+District Name 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+exempt_cat 
+exempt_dscr 
+pct_exempt 
+exempt_val 
+
+NO 
+
+varchar 
+varchar 
+varchar 
+varchar 
+
+4 
+50 
+9 
+12 
+
+Exemption Categories 
+Exemption Categories Description 
+Percent Ownership * 100 
+Exemption Value 
+
+Text file: t_jur_tax_dist_exempt_value_rate 
+Primary Key: tax_dist, exempt_cd 
+
+Column Name 
+
+RP_TYPE 
+tax_dist 
+name 
+exempt_cd 
+prop 
+curr 
+exempt_val 
+exempt_rate 
+
+Column Name 
+
+acct 
+tax_dist 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+
+Data 
+Type 
+varchar 
+varchar 
+
+tp_cd 
+
+char 
+
+pct_district 
+appraised_val 
+taxable_val 
+
+varchar 
+varchar 
+varchar 
+
+13 
+20 
+20 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+
+NO 
+
+8 
+6 
+100 
+3 
+10 
+10 
+10 
+8 
+
+Property Type; P - Personal 
+Tax District Code 
+Tax District Name 
+Exemption Code 
+Proposed Millage Rate 
+Current Millage Rate 
+Exemption Value 
+Exemption Percentage 
+
+Text file: t_jur_value 
+Primary Key: acct, tax_dist 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+
+7 
+6 
+
+1 
+
+Account Number 
+Taxing District Code 
+See Code Descriptions(Personal) – Jurisdictions 
+Or desc_t_05_jurisdictions.txt 
+Taxing District Type 
+See Code Descriptions(Personal) – Jurisdictions Type 
+Or desc_t_06_jurisdiction_type.txt 
+Additional Taxing Districts Percent 
+Certified Assessed Value/Noticed Assessed Value 
+Certified Taxable Value/Noticed Taxable Value 
+
+Column Name 
+
+acct 
+sched_cd 
+Div_ord 
+Type_Interest 
+Interest_Percent 
+
+Description 
+
+Size  Allow 
+
+Text file: t_pp_e 
+Primary Key: acct (Output restricted to 2023 and earlier) 
+Data 
+Type 
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+
+Account Number of Minerals 
+Schedule Codes of Minerals 
+Railroad Commission Lease Number 
+Owner Interest Type 
+Owner Interest Percent 
+
+7 
+1 
+100 
+100 
+100 
+
+Null 
+NO 
+
+Column Name 
+
+Data 
+
+Text file: t_pp_l 
+Primary Key: acct 
+Description 
+
+Size  Allow 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+acct 
+sched_cd 
+type_structure 
+volt_amp 
+el_mileage 
+Num_of_circuits 
+contract_acct 
+
+Null 
+NO 
+
+Type 
+varchar 
+char 
+varchar 
+varchar 
+varchar 
+varchar 
+varchar 
+
+7 
+1 
+100 
+100 
+100 
+100 
+100 
+
+Account Number of Electrical Transmission  
+Schedule Codes of Electrical Transmission 
+Electrical Structure 
+Electrical Volt Amps 
+Electrical Mileage 
+Electrical Circuits 
+Contractor Account Number 
+
+_______________________ 
+Code Description Files 
+
+Column Name 
+
+Code 
+Dept 
+Description 
+
+Column Name 
+
+Type 
+Description 
+
+Column Name 
+
+Code 
+Description 
+
+Text file: desc_r_01_state_class 
+Primary Key: Code 
+Description 
+
+Size  Allow 
+
+Null 
+NO 
+
+16 
+4 
+100 
+
+Property Use Code 
+Department 
+Description 
+
+Data 
+Type 
+varchar 
+char 
+varchar 
+
+Text file: desc_r_02_building_type_code 
+Primary Key: Type 
+Description 
+
+Size  Allow 
+
+Data 
+Type 
+char 
+varchar 
+
+Null 
+NO 
+
+4 
+50 
+
+Building Type 
+Description 
+
+Text file: desc_r_03_building_style 
+Primary Key: Code 
+
+Data 
+Type 
+char 
+4 
+varchar  50 
+
+Size  Allow 
+
+Null 
+NO 
+
+Description 
+
+Building Style 
+Description 
+
+Column Name 
+
+Class 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Text file: desc_r_04_building_class 
+Primary Key: Class 
+Description 
+
+Size  Allow 
+
+Null 
+NO 
+
+3 
+50 
+
+Building Class 
+Description 
+
+Text file: desc_r_05_building_data_elements 
+Primary Key: Code 
+Description 
+
+Size  Allow 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Null 
+NO 
+
+4 
+50 
+
+Element Category 
+Description 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Text file: desc_r_06_structural_element_type 
+Primary Key: Type, Category 
+
+Column Name 
+
+Type 
+Category 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+
+4 
+5 
+50 
+
+Element Type 
+Element Category 
+Description 
+
+Text file: desc_r_07_quality_code 
+Primary Key: Code 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+2 
+50 
+
+Quality Code 
+Description 
+
+Text file: desc_r_08_pgi_category 
+Primary Key: Category 
+Description 
+
+Size  Allow 
+
+Column Name 
+
+Category 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Null 
+NO 
+
+2 
+50 
+
+PGI Category 
+Description 
+
+Text file: desc_r_09_subarea_type 
+Primary Key: Type 
+
+Column Name 
+
+Type 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+6 
+50 
+
+Subarea Type 
+Description 
+
+Text file: desc_r_10_extra_features 
+Primary Key: Code 
+
+Column Name 
+
+Code 
+Dscr 
+LongDescription 
+Category 
+
+Data 
+Type 
+char 
+varchar 
+varchar 
+char 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+6 
+10 
+50 
+6 
+
+Use Code 
+Short Description 
+Long Description 
+Category 
+
+Text file: desc_r_11_extra_feature_category 
+Primary Key: Category 
+Description 
+
+Size  Allow 
+
+Column Name 
+
+Category 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Null 
+NO 
+
+6 
+50 
+
+Category 
+Description 
+
+Text file: desc_r_12_real_jurisdictions 
+Primary Key: Code 
+
+Column Name 
+
+Code 
+
+Data 
+Type 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+6 
+
+District Code 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Description 
+
+varchar 
+
+100 
+
+Description 
+
+Text file: desc_r_13_real_jurisdiction_type 
+Primary Key: Type 
+
+Column Name 
+
+Type 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+1 
+50 
+
+Type Code 
+Description 
+
+Text file: desc_r_14_exemption_category 
+Primary Key: Category 
+Description 
+
+Size  Allow 
+
+Column Name 
+
+Category 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Null 
+NO 
+
+3 
+50 
+
+Category 
+Description 
+
+Text file: desc_r_15_land_usecode 
+Primary Key: Code 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+4 
+50 
+
+Use Code 
+Description 
+
+Text file: desc_r_16_influence_factors 
+Primary Key: UseCd, InfCd, InfTbl  
+
+Column Name 
+
+UseCd 
+InfCd 
+InfTbl 
+Description 
+
+Data 
+Type 
+char 
+char 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+NO 
+
+4 
+4 
+2 
+50 
+
+Use Code 
+Influence Code 
+Influence Table 
+Description 
+
+Column Name 
+
+Type 
+Description 
+
+Text file: desc_r_17_relationship_type 
+Primary Key: Type 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+2 
+100 
+
+Relationship Type 
+Description 
+
+Text file: desc_r_18_permit_status 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+
+1 
+50 
+
+Permit Status 
+Description 
+
+Column Name 
+
+Data 
+
+Size  Allow 
+
+Description 
+
+Text file: desc_r_19_permit_code 
+Primary Key: Code 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Code 
+Description 
+
+Type 
+varchar 
+varchar 
+
+10 
+50 
+
+Null 
+NO 
+
+Permit Code 
+Description 
+
+Text file: desc_r_20_school_district 
+Primary Key: Code 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+5 
+150 
+
+ISD Number 
+Independent School District 
+
+Text file: desc_r_21_market_area 
+Primary Key: MktArea 
+Description 
+
+Size  Allow 
+
+Column Name 
+
+MktArea 
+Description 
+
+Data 
+Type 
+varchar 
+varchar 
+
+Null 
+NO 
+
+10 
+50 
+
+Market Area 
+Description 
+
+Text file: desc_r_22_hisd_section 
+
+Column Name 
+
+Code 
+NeighborhoodGroup 
+
+Data 
+Type 
+varchar 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+20 
+30 
+
+Code 
+Neighborhood Group Range 
+
+Text file: desc_r_23_special_codes 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+NO 
+
+1 
+50 
+
+Special Code 
+Description 
+
+Text file: desc_r_24_agent_roles 
+Primary Key: Code 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+2 
+200 
+
+Agent Code 
+Description 
+
+Text file: desc_r_25_conclusion_code 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+2 
+50 
+
+Hearing Conclusion Codes  
+Description 
+
+Text file: desc_r_26_neighborhood_num_adjust 
+
+Column Name 
+
+Neighborhood 
+Description 
+
+Data 
+Type 
+varchar 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+12 
+50 
+
+Neighborhood Code 
+Description 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Class 
+adj_pcent 
+
+varchar 
+varchar 
+
+16 
+7 
+
+Property Use Code 
+Building Adjustment 
+
+Column Name 
+
+Code 
+Description 
+
+Column Name 
+
+Code 
+Description 
+Class 
+
+Column Name 
+
+Type 
+Description 
+Category 
+
+Text file: desc_t_01_state_class 
+Primary Key: Code 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+2 
+50 
+
+State Class Code 
+Description 
+
+Text file: desc_t_02_schedule_code 
+Primary Key: Code 
+
+Data 
+Type 
+char 
+varchar 
+char 
+
+Data 
+Type 
+varchar 
+varchar 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+1 
+50 
+2 
+
+Schedule Code 
+Description 
+State Class 
+
+Text file: desc_t_03_sic_code 
+Primary Key: Type 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+8 
+100 
+50 
+
+SIC Code 
+SIC Code Description 
+Trade Code Description 
+
+Text file: desc_t_04_department_group 
+Primary Key: Code 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+4 
+50 
+
+Department Group 
+Description 
+
+Text file: desc_t_05_jurisdictions 
+Primary Key: Code 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+varchar 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+6 
+100 
+
+District Code 
+Description 
+
+Text file: desc_t_06_jurisdiction_type 
+Primary Key: Code 
+
+Column Name 
+
+Code 
+Description 
+
+Data 
+Type 
+char 
+varchar 
+
+Size  Allow 
+
+Description 
+
+Null 
+NO 
+
+1 
+50 
+
+Type Code 
+Description 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Notes 
+
+2/11/2024: 
+All records of data element type FXT (Fixtures:  Total) have been removed from data file 
+desc_r_05_building_data_elements. 
+All records of type FXT (Fixtures:  Total) have been removed from data file fixtures. 
+
+12/31/2024: 
+Text files jur_tax_dist_exempt_value and jur_tax_dist_percent_rate have been replaced by the file 
+jur_tax_dist_exempt_value_rate. Text files t_jur_tax_dist_exempt_value and t_jur_tax_dist_percent_rate 
+have been replaced by the file t_jur_tax_dist_exempt_value_rate. 
+
+ 
+ 
+ 
+

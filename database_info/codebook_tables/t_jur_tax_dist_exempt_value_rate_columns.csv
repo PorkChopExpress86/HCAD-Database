@@ -1,0 +1,9 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+RP_TYPE,varchar,8,NO,Property Type; P - Personal,16
+tax_dist,varchar,6,NO,Tax District Code,16
+name,varchar,100,,Tax District Name,16
+exempt_cd,char,3,NO,Exemption Code,16
+prop,varchar,10,,Proposed Millage Rate,16
+curr,varchar,10,,Current Millage Rate,16
+exempt_val,varchar,10,,Exemption Value,16
+exempt_rate,varchar,8,,Exemption Percentage,16

@@ -1,0 +1,9 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+RP_TYPE,varchar,4 NO,,Type; R-Real,9
+tax_dist,varchar,6 NO,,District Code,9
+name,varchar,100,,District Name,9
+exempt_cd,char,3,,Code,9
+prop,varchar,10,,Millage Rate,9
+curr,varchar,10,,Millage Rate,9
+exempt_val,varchar,10,,Value,9
+exempt_rate,varchar,8,,Percentage,9

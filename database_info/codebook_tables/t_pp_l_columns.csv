@@ -1,0 +1,10 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,7,NO,Account Number of Electrical Transmission,17
+sched_cd,char,1,,Schedule Codes of Electrical Transmission,17
+type_structure,varchar,100,,Electrical Structure,17
+volt_amp,varchar,100,,Electrical Volt Amps,17
+el_mileage,varchar,100,,Electrical Mileage,17
+Num_of_circuits,varchar,100,,Electrical Circuits,17
+contract_acct,varchar,100,,Contractor Account Number,17
+_______________________,,,,,17
+Code Description,Files,,,,17

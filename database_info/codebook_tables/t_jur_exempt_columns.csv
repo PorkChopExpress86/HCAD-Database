@@ -1,0 +1,8 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,7,NO,Account Number,15
+tax_dist,varchar,6,NO,Taxing District,15
+tax_dist_name,varchar,100,,District Name,15
+exempt_cat,varchar,4,NO,Exemption Categories,16
+exempt_dscr,varchar,50,,Exemption Categories Description,16
+pct_exempt,varchar,9,,Percent Ownership * 100,16
+exempt_val,varchar,12,,Exemption Value,16

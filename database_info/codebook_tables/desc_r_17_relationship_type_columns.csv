@@ -1,0 +1,3 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+Type,char,2,NO,Relationship Type,19
+Description,varchar,100,,Description,19

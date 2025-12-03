@@ -1,0 +1,4 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+cd,varchar,11,NO,Neighborhood Code,13
+grp_cd,varchar,8,,Neighborhoods Group Code,13
+dscr,varchar,50,,Neighborhood Description,13

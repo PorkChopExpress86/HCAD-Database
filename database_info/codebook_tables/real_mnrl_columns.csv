@@ -1,0 +1,6 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number of Minerals,13
+dor_cd,varchar,4,,Property Use Code,13
+Rail_leasenum,varchar,100,,Railroad Commission Lease Number,13
+Type_Interest,varchar,100,,Owner Interest Type,13
+Interest_Percent,varchar,100,,Owner Interest Percent,13

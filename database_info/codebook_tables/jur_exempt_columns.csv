@@ -1,0 +1,5 @@
+Column Name,Data Type,Size,Allow Null,Description,Source Page
+acct,varchar,13,NO,Account Number,8
+tax_district,varchar,6,NO,Taxing District See Code Descriptions(Real) - Real Jurisdictions Or desc_r_12_real_jurisdictions.txt,8
+exempt_cat,varchar,4,NO,Exemption Types Category See Code Descriptions(Real) - Exemption Categories Or desc_r_14_exemption_category.txt,8
+exempt_val,varchar,20,,Exempt Value,8
