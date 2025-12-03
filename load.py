@@ -469,8 +469,32 @@ def load_data(
 
     _log("Load process complete.")
 
+    # Execute post-load setup (create functions and views)
+    _log("Executing post-load setup (creating functions and views)...")
+    try:
+        _execute_post_load_setup(engine)
+        _log("Post-load setup completed successfully.")
+    except Exception as e:
+        _log(f"Warning: Post-load setup failed: {e}")
+        _log("You can manually run post_load_setup.sql to create views.")
 
-def _parse_args(argv: Sequence[str]) -> argparse.Namespace:
+
+def _execute_post_load_setup(engine) -> None:
+    """Execute the post-load SQL setup script to create functions and views."""
+    sql_file = Path(__file__).parent / "post_load_setup.sql"
+    if not sql_file.exists():
+        _log(f"Post-load setup file not found: {sql_file}")
+        return
+
+    sql_content = sql_file.read_text(encoding="utf-8")
+
+    with engine.begin() as conn:
+        # Execute the entire SQL file
+        conn.execute(text(sql_content))
+        _log(f"Executed post-load setup from {sql_file}")
+
+
+def _log(msg: str) -> None:
     p = argparse.ArgumentParser(description="Load HCAD extracted data into a database.")
     p.add_argument(
         "--indir", default="extracted", help="Directory with extracted .txt files."

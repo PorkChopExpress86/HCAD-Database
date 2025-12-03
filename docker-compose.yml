@@ -12,33 +12,5 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  mcp_postgres:
-    image: node:18-alpine
-    container_name: hcad-mcp-postgres
-    restart: unless-stopped
-    depends_on:
-      - db
-    # Run the official MCP Postgres server via npx inside a lightweight node image.
-    command: sh -c "npx -y @modelcontextprotocol/server-postgres postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:${POSTGRES_PORT}/${POSTGRES_DB} --port 8080"
-    ports:
-      - "8080:8080"
-    environment:
-      # Allow the MCP server to resolve the DB by its service name 'db'
-      NODE_ENV: production
-
-  mcp_bridge:
-    build:
-      context: .
-      dockerfile: mcp_bridge/Dockerfile
-    container_name: hcad-mcp-bridge
-    restart: unless-stopped
-    depends_on:
-      - db
-    environment:
-      DATABASE_URL: ${DATABASE_URL}
-      MCP_BRIDGE_API_KEY: ${MCP_BRIDGE_API_KEY:-}
-    ports:
-      - "5000:5000"
-
 volumes:
   postgres_data:
